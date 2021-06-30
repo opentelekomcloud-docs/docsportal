@@ -1,0 +1,12 @@
+# The order of packages is significant, because pip processes them in the order
+# of appearance. Changing the order has an impact on the overall integration
+# process, which may cause wedges in the gate later.
+# Notes:
+# reno needs openstackdocstheme which needs reno (cycle dep).
+# os-api-ref needs openstackdocstheme which needs os-api-ref (cycle dep).
+# Put them in here will make it clear that those are only needed for
+# docs.
+
+sphinx==4.0.0
+otcdocstheme
+reno>=3.1.0 # Apache-2.0

@@ -1,0 +1,26 @@
+_build/
+/AUTHORS
+/ChangeLog
+/dist/
+/otcdocstheme.egg-info/
+.DS_Store
+*.pyc
+doc/build
+doc/source/BBresult
+api-ref/build
+.tox
+/.venv
+*.swp
+*.log
+*.egg*
+
+# Editors
+*~
+
+# Files created by releasenotes build
+releasenotes/build
+
+# Files created by the LaTeX/PDF build
+/.aux
+/.fdb_latexmk
+/texput.fls

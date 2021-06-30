@@ -1,0 +1,4 @@
+- project:
+    merge-mode: squash-merge
+    templates:
+      - publish-otc-docs-pti
