@@ -13,7 +13,7 @@ extensions = [
 ]
 
 # openstackdocstheme options
-#otcdocs_repo_name = 'opentelekomcloud-infra/docsportal'
+otcdocs_repo_name = 'opentelekomcloud-infra/docsportal'
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -31,7 +31,6 @@ exclude_patterns = ['_build']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
 
-
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -42,8 +41,8 @@ html_theme = 'otcdocs'
 # further.  For a list of options available for each theme, see the
 # documentation.
 otcdocs_auto_version = False
-#otcdocs_include_additional_title = False
-#otcdocs_bug_project = 'opentelekomcloud-infra/docportal'
+
+html_favicon = '_static/favicon.ico'
 
 # To use the API Reference sidebar dropdown menu,
 # uncomment the html_theme_options parameter.  The theme
@@ -74,5 +73,5 @@ latex_documents = [
 
 # -- Intersphinx
 intersphinx_mapping = {
-    'otce': ('https://docs.otc-service.com/python-otcextensions', None)
+#    'otce': ('https://docs.otc-service.com/python-otcextensions', None)
 }
