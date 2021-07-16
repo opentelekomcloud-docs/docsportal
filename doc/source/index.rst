@@ -8,12 +8,31 @@ working with Open Telekom Cloud
 SDK
 ---
 
-
-- `Python <https://docs.otc-service.com/python-otcextensions>`_
-- `Go <https://docs.otc-service.com/gophertelekomcloud>`_
+* `Python <https://docs.otc-service.com/python-otcextensions>`_
+* `Go <https://github.com/opentelekomcloud/gophertelekomcloud/>`_
+* `JS <https://github.com/opentelekomcloud/oms/>`_
 
 `Infrastructure as a Code` Tools
 --------------------------------
 
-- `Terraform <https://docs.otc-service.com/terraform-provider-opentelekomcloud>`_
-- `Ansible <https://docs.otc-service.com/ansible-collection-cloud>`_
+* Terraform
+   * `Terraform <https://www.terraform.io/>`_
+   * `Terraform Open Telekom Cloud provider <https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/latest/docs>`_
+
+* Ansible
+   * `Ansible <https://www.ansible.com>`_
+   * `Open Telekom Cloud modules </ansible-collection-cloud>`_
+
+
+CLI
+---
+
+* `OpenStackClient <https://docs.openstack.org/python-openstackclient/>`_
+* `OpenStackClient Open Telekom Cloud plugins <https://docs.otc-service.com/python-otcextensions>`_
+
+
+Other Drivers and Tools
+-----------------------
+
+* `Docker machine driver <https://github.com/opentelekomcloud/docker-machine-opentelekomcloud>`_
+* `Rancher Open Telekom Cloud CCE driver <https://github.com/opentelekomcloud/kontainer-engine-driver-otc>`_
