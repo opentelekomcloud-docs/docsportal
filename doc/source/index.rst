@@ -36,3 +36,8 @@ Other Drivers and Tools
 
 * `Docker machine driver <https://github.com/opentelekomcloud/docker-machine-opentelekomcloud>`_
 * `Rancher Open Telekom Cloud CCE driver <https://github.com/opentelekomcloud/kontainer-engine-driver-otc>`_
+
+CLI Configuration
+-----------------
+OTC Extensions are easy to :doc:`configure <configuration>`. All credentials can be
+configured conveniently in a few files.
