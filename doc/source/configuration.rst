@@ -1,5 +1,8 @@
-Configuration
-=============
+:orphan:
+
+=================
+CLI Configuration
+=================
 
 You can connect to the Open Telekom Cloud and OpenStack clouds in general
 using two approaches. The first one uses a credential file called

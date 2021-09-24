@@ -2,9 +2,9 @@
 Open Telekom Cloud DevOps Portal
 ================================
 
-
 Here you can find documentation for the helpful tools that can be used for
 working with Open Telekom Cloud
+
 
 SDK
 ---
@@ -39,5 +39,5 @@ Other Drivers and Tools
 
 CLI Configuration
 -----------------
-OTC Extensions are easy to :doc:`configure <configuration>`. All credentials can be
+OTC CLI Extensions are easy to :doc:`configure <configuration>`. All credentials can be
 configured conveniently in a few files.
