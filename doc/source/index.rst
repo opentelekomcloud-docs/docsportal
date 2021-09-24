@@ -29,7 +29,7 @@ CLI
 
 * `OpenStackClient <https://docs.openstack.org/python-openstackclient/>`_
 * `OpenStackClient Open Telekom Cloud plugins <https://docs.otc-service.com/python-otcextensions>`_
-
+* `CLI Configuration <https://docs.otc-service.com/python-otcextensions/install/configuration.html>`_
 
 Other Drivers and Tools
 -----------------------
