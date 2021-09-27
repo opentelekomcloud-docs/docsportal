@@ -1,8 +1,8 @@
 :orphan:
 
-=================
-CLI Configuration
-=================
+===================
+Tools Configuration
+===================
 
 You can connect to the Open Telekom Cloud and OpenStack clouds in general
 using two approaches. The first one uses a credential file called
@@ -214,3 +214,57 @@ functionality.
 .. note::
    You don't need to specify the `--os-cloud` parameter when environment
    variables are used.
+
+Cache Settings
+--------------
+
+Accessing a cloud is often expensive, so it's quite common to want to do some
+client-side caching of those operations. To facilitate that, `openstacksdk`
+understands passing through cache settings to dogpile.cache, with the following
+behaviors:
+
+* Listing no config settings means you get a null cache.
+* `cache.expiration_time` and nothing else gets you memory cache.
+* Otherwise, `cache.class` and `cache.arguments` are passed in
+
+Different cloud behaviors are also differently expensive to deal with. If you
+want to get really crazy and tweak stuff, you can specify different expiration
+times on a per-resource basis by passing values, in seconds to an expiration
+mapping keyed on the singular name of the resource. A value of `-1` indicates
+that the resource should never expire.
+
+`openstacksdk` does not actually cache anything itself, but it collects
+and presents the cache information so that your various applications that
+are connecting to OpenStack can share a cache should you desire.
+
+.. code-block:: yaml
+
+  cache:
+    class: dogpile.cache.pylibmc
+    expiration_time: 3600
+    arguments:
+      url:
+        - 127.0.0.1
+    expiration:
+      server: 5
+      flavor: -1
+  clouds:
+    mtvexx:
+      profile: vexxhost
+      auth:
+        username: mordred@inaugust.com
+        password: XXXXXXXXX
+        project_name: mordred@inaugust.com
+      region_name: ca-ymq-1
+      dns_api_version: 1
+
+`openstacksdk` can also cache authorization state (token) in the keyring.
+That allow the consequent connections to the same cloud to skip fetching new
+token. When the token gets expired or gets invalid `openstacksdk` will
+establish new connection.
+
+
+.. code-block:: yaml
+
+  cache:
+    auth: true

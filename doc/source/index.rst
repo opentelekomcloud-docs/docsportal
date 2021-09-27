@@ -24,7 +24,6 @@ SDK
    * `Ansible <https://www.ansible.com>`_
    * `Open Telekom Cloud modules </ansible-collection-cloud>`_
 
-
 CLI
 ---
 
@@ -37,7 +36,7 @@ Other Drivers and Tools
 * `Docker machine driver <https://github.com/opentelekomcloud/docker-machine-opentelekomcloud>`_
 * `Rancher Open Telekom Cloud CCE driver <https://github.com/opentelekomcloud/kontainer-engine-driver-otc>`_
 
-CLI Configuration
------------------
-OTC CLI Extensions are easy to :doc:`configure <configuration>`. All credentials can be
+Tools Configuration
+-------------------
+OTC Tools are easy to :doc:`configure <configuration>`. All credentials can be
 configured conveniently in a few files.
