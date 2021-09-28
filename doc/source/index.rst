@@ -13,8 +13,8 @@ SDK
 * `Go <https://github.com/opentelekomcloud/gophertelekomcloud/>`_
 * `JS <https://github.com/opentelekomcloud/oms/>`_
 
-`Infrastructure as a Code` Tools
---------------------------------
+`Infrastructure as Code` Tools
+------------------------------
 
 * Terraform
    * `Terraform <https://www.terraform.io/>`_
@@ -36,7 +36,7 @@ Other Drivers and Tools
 * `Docker machine driver <https://github.com/opentelekomcloud/docker-machine-opentelekomcloud>`_
 * `Rancher Open Telekom Cloud CCE driver <https://github.com/opentelekomcloud/kontainer-engine-driver-otc>`_
 
-Tools Configuration
--------------------
-OTC Tools are easy to :doc:`configure <configuration>`. All credentials can be
-configured conveniently in a few files.
+Cloud Connect Configuration
+---------------------------
+OTC Connect is easy to :doc:`configure <configuration>`. All credentials can be
+configured conveniently in a few files. OTC connect configuration is general for all tools above.

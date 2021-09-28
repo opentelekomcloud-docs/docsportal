@@ -1,8 +1,8 @@
 :orphan:
 
-===================
-Tools Configuration
-===================
+========================
+Connection Configuration
+========================
 
 You can connect to the Open Telekom Cloud and OpenStack clouds in general
 using two approaches. The first one uses a credential file called
@@ -250,12 +250,12 @@ are connecting to OpenStack can share a cache should you desire.
       flavor: -1
   clouds:
     mtvexx:
-      profile: vexxhost
+      profile: otc
       auth:
-        username: mordred@inaugust.com
-        password: XXXXXXXXX
-        project_name: mordred@inaugust.com
-      region_name: ca-ymq-1
+        username: "<USER_NAME>"
+        password: '<PASSWORD>'
+        project_name: <eu-de_PROJECT_NAME>
+      region_name: eu-de
       dns_api_version: 1
 
 `openstacksdk` can also cache authorization state (token) in the keyring.
