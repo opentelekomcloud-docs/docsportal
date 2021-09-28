@@ -218,7 +218,7 @@ functionality.
 Cache Settings
 --------------
 
-Accessing a cloud is often expensive, so it's quite common to want to do some
+Accessing a cloud is often expensive, so it's quite common to use
 client-side caching of those operations. To facilitate that, `openstacksdk`
 understands passing through cache settings to dogpile.cache, with the following
 behaviors:
