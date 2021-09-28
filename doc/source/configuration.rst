@@ -125,8 +125,6 @@ secret which is left out from ``clouds.yaml``:
         auth_url: 'https://iam.eu-de.otc.t-systems.com:443/v3'
       interface: 'public'
       identity_api_version: 3 # !Important
-      ak: '<AK_VALUE>' # AK/SK pair for access to OBS
-      sk: '<SK_VALUE>'
 
 **secure.yaml**
 
@@ -136,6 +134,9 @@ secret which is left out from ``clouds.yaml``:
     otc:
       auth:
         password: '<PASSWORD>'
+      ak: '<AK_VALUE>' # AK/SK pair for access to OBS
+      sk: '<SK_VALUE>'
+
 
 .. _environment-variables:
 
@@ -169,11 +170,10 @@ following configuration can be used in ``clouds.yaml``:
 Configuration of Environment Variables
 --------------------------------------
 
-Instead of using the clouds.yaml file, environmnt variables can be configured
-to connect to the Open Telekom Cloud. Create a simple file like ``.ostackrc``
-in the home directory and source the file to make the variables available. On
-Open Telekom Cloud servers this file exists on bootup and needs to be changed
-according to your credentials.
+Historically OpenStack tools are supporting configuration through environment
+variables. Create a simple file like ``.ostackrc`` in the home directory and
+source the file to make the variables available. On Open Telekom Cloud servers
+this file exists on bootup and needs to be changed according to your credentials.
 
 .. code-block:: bash
 
@@ -268,3 +268,25 @@ establish new connection.
 
   cache:
     auth: true
+
+MFA Support
+-----------
+
+MFA support requires a specially prepared configuration file. In this case a
+combination of 2 different authorization plugins is used with their individual
+requirements to the specified parameters.
+
+.. code-block:: yaml
+
+  clouds:
+    mfa:
+      auth_type: "v3multifactor"
+      auth_methods:
+        - v3password
+        - v3totp
+      auth:
+        auth_url: "https://iam.eu-de.otc.t-systems.com/v3"
+        username: "<USER_NAME>"
+        password: '<PASSWORD>'
+        project_name: <eu-de_PROJECT_NAME>
+        user_domain_name: 'OTC00000000001000000xxx'

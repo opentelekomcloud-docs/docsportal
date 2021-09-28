@@ -38,5 +38,5 @@ Other Drivers and Tools
 
 Cloud Connect Configuration
 ---------------------------
-OTC Connect is easy to :doc:`configure <configuration>`. All credentials can be
+Open Telekom Cloud tools are easy to :doc:`configure <configuration>`. All credentials can be
 configured conveniently in a few files. OTC connect configuration is general for all tools above.
