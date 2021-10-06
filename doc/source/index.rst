@@ -5,6 +5,7 @@ Open Telekom Cloud DevOps Portal
 Here you can find documentation for the helpful tools that can be used for
 working with Open Telekom Cloud
 
+
 SDK
 ---
 
@@ -12,8 +13,8 @@ SDK
 * `Go <https://github.com/opentelekomcloud/gophertelekomcloud/>`_
 * `JS <https://github.com/opentelekomcloud/oms/>`_
 
-`Infrastructure as a Code` Tools
---------------------------------
+`Infrastructure as Code` Tools
+------------------------------
 
 * Terraform
    * `Terraform <https://www.terraform.io/>`_
@@ -23,16 +24,19 @@ SDK
    * `Ansible <https://www.ansible.com>`_
    * `Open Telekom Cloud modules </ansible-collection-cloud>`_
 
-
 CLI
 ---
 
 * `OpenStackClient <https://docs.openstack.org/python-openstackclient/>`_
 * `OpenStackClient Open Telekom Cloud plugins <https://docs.otc-service.com/python-otcextensions>`_
 
-
 Other Drivers and Tools
 -----------------------
 
 * `Docker machine driver <https://github.com/opentelekomcloud/docker-machine-opentelekomcloud>`_
 * `Rancher Open Telekom Cloud CCE driver <https://github.com/opentelekomcloud/kontainer-engine-driver-otc>`_
+
+Cloud Connect Configuration
+---------------------------
+Open Telekom Cloud tools are easy to :doc:`configure <configuration>`. All credentials can be
+configured conveniently in a few files. Open Telekom Cloud configuration is general for all tools above.
