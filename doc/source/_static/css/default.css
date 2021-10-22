@@ -1,0 +1,15 @@
+.service-box {
+  border: 1px solid #E8E8E8;
+  padding: 30px 20px;
+  border-radius: 4px;
+  min-height: 200px;
+  margin-right: 20px !important;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.service-box:hover {
+    box-shadow: 0 0 6px rgba(35, 173, 278, 1);
+}
+
