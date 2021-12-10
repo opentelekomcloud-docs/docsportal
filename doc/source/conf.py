@@ -52,8 +52,8 @@ html_favicon = '_static/favicon.ico'
 html_theme_options = {
     'show_other_versions': False,
     'display_toc': False,
-    'display_global_toc_section': False,
-    'nosidebar': True,
+    'display_global_toc_section': True,
+    'nosidebar': False,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
