@@ -9,28 +9,28 @@ Open Telekom Cloud DevOps Portal
             <div class="startpage-item">            
                 <img src="_static/images/openstack-logo-vert.png">
                 <h3>SDK</h3>
-                <p style="text-align: justify;">Some useful text.</p>
+                <p>Software Development Kits for Open Telekom Cloud.</p>
             </div>
         </a>
         <a href="services/infrastructure_as_code.html">
             <div class="startpage-item">            
                 <img src="_static/images/openstack-logo-vert.png">
                 <h3>Infrastructure as Code Tools</h3>
-                <p style="text-align: justify;">Some useful text.</p>
+                <p>Useful tools to create, manage and delete infrastructure on Open Telekom Cloud.</p>
             </div>
         </a>
         <a href="services/cli.html">
             <div class="startpage-item">            
                 <img src="_static/images/openstack-logo-vert.png">
                 <h3>CLI</h3>
-                <p style="text-align: justify;">Some useful text.</p>
+                <p>Command Line Interface tools for Open Telekom Cloud.</p>
             </div>
         </a>
         <a href="services/driver_and_tools.html">
             <div class="startpage-item">            
                 <img src="_static/images/openstack-logo-vert.png">
                 <h3>Other Driver and Tools</h3>
-                <p style="text-align: justify;">Some useful text.</p>
+                <p>Useful Tools for Open Telekom Cloud.</p>
             </div>
         </a>
     </div>
@@ -39,7 +39,7 @@ Open Telekom Cloud DevOps Portal
    :maxdepth: 1
 
    services/sdk
-   services/cli
+   CLI <services/cli>
    services/infrastructure_as_code
    services/driver_and_tools
 
