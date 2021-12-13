@@ -5,16 +5,20 @@ Open Telekom Cloud DevOps Portal
 .. raw:: html
 
     <div class="startpage-container">
-        <div class="startpage-item">
-            <img src="_static/images/openstack-logo-vert.png">
-            <h3>Compute</h3>
-            <p style="text-align: justify;">Das ist ein hoffentlich mehrzeiliger Kommentar, indem viele nützliche Informationen zum ECS stehen.</p>
-        </div>
-        <div class="startpage-item">
-            <img src="_static/images/openstack-logo-vert.png">
-            <h3>Network</h3>
-            <p style="text-align: justify;">Das ist ein hoffentlich mehrzeiliger Kommentar, indem viele nützliche Informationen zum ECS stehen.</p>
-        </div>
+        <a href="services/compute.html">
+            <div class="startpage-item">            
+                <img src="_static/images/openstack-logo-vert.png">
+                <h3>Compute</h3>
+                <p style="text-align: justify;">Das ist ein hoffentlich mehrzeiliger Kommentar, indem viele nützliche Informationen zum ECS stehen.</p>            
+            </div>
+        </a>
+        <a href="services/network.html">
+            <div class="startpage-item">
+                <img src="_static/images/openstack-logo-vert.png">
+                <h3>Network</h3>
+                <p style="text-align: justify;">Das ist ein hoffentlich mehrzeiliger Kommentar, indem viele nützliche Informationen zum ECS stehen.</p>
+            </div>
+        </a>
         <div class="startpage-item">
             <img src="_static/images/openstack-logo-vert.png">
             <h3>Security</h3>
@@ -34,3 +38,11 @@ Open Telekom Cloud DevOps Portal
    services/storage
    services/network
    services/security
+
+.. raw:: html
+
+    <style>
+        .toctree-wrapper {
+            display: none;
+        }
+    </style>
