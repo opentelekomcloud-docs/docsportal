@@ -7,9 +7,15 @@
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
+import os
+import sys
+
+sys.path.append(os.path.abspath("./_ext"))
+
 extensions = [
     'sphinx.ext.intersphinx',
-    'otcdocstheme'
+    'otcdocstheme',
+    'cont'
 ]
 
 # openstackdocstheme options
@@ -51,9 +57,7 @@ html_favicon = '_static/favicon.ico'
 # appear in the sidebar dropdown menu.
 html_theme_options = {
     'show_other_versions': False,
-    'display_toc': False,
-    'display_global_toc_section': False,
-    'nosidebar': True,
+    'sidebar_mode': 'toctree',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
