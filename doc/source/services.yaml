@@ -1,0 +1,162 @@
+---
+service_categories:
+  compute:
+    title: "Compute"
+    services:
+      as:
+        title: Auto Scaling
+        api: https://docs.otc.t-systems.com/en-us/api/as/en-us_topic_0045219159.html
+        umn: https://docs.otc.t-systems.com/usermanual/as/en-us_topic_0042018361.html
+        links:
+          - url: https://docs.otc.t-systems.com/devg/as/en-us_topic_0110252694.html
+            title: Developer Guide
+      bms:
+        title: Bare Metal Server
+        api: https://docs.otc.t-systems.com/en-us/api/bms/en-us_topic_0143138428.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/bms/en-us_topic_0053536919.html
+        dev: https://docs.otc.t-systems.com/en-us/devg/bms/en-us_topic_0113605684.html
+        links:
+          - url: https://docs.otc.t-systems.com/en-us/devg/bms/en-us_topic_0113605684.html
+            title: Developer Guide
+          - url: https://docs.otc.t-systems.com/en-us/bpicg/bms/en-us_topic_0081116754.html
+            title: Private Image Creation Guide
+      cce:
+        title: Cloud Container Engine
+        api: https://docs.otc.t-systems.com/en-us/api2/cce/cce_02_0344.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual2/cce/cce_01_0091.html
+      deh:
+        title: Dedicated Host
+        api: https://docs.otc.t-systems.com/en-us/api/deh/deh_02_0001.html
+        umn: https://docs.otc.t-systems.com/usermanual/deh/deh_01_0003.html
+      ecs:
+        title: Elastic Cloud Server
+        api: https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020805967.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0092494580.html
+        links:
+          - url: https://docs.otc.t-systems.com/en-us/devg/ecs/en-us_topic_0134192990.html
+            title: Developer Guide
+      ims:
+        title: Image Management Service
+        api: https://docs.otc.t-systems.com/en-us/api/ims/en-us_topic_0020507759.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/ims/en-us_topic_0013901623.html
+        links:
+          - url: https://docs.otc.t-systems.com/en-us/devg/ims/en-us_topic_0109822377.html
+            title: Developer Guide
+          - url: https://docs.otc.t-systems.com/ims/doc/download/pdf/ims-itd.pdf
+            title: Public Images Introduction
+
+  storage:
+    title: Storage
+    services:
+      cbr:
+        title: Cloud Backup and Recovery
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/cbr/cbr_01_0001.html
+      csbs:
+        title: Cloud Server Backup Service
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/csbs/en-us_topic_0056584625.html
+      evs:
+        title: Elastic Volume Service
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/evs/evs_01_0119.html
+      obs:
+        title: Object Storage Service
+        umn: https://docs.otc.t-systems.com/usermanual/obs/en-us_topic_0045853692.html
+      sdrs:
+        title: Storage Disaster Recovery Service
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/sdrs/sdrs_pro_0000.html
+      sfs:
+        title: Scalable File Service
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/sfs/en-us_topic_0034428718.html
+      vbs:
+        title: Volume Backup Service
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/vbs/en-us_topic_0015667845.html
+
+  network:
+    title: Network
+    services:
+      cdn:
+        title: Content Delivery Network (Akamai)
+      dc:
+        title: Direct Connect
+      dns:
+        title: Domain Name Service
+      elb:
+        title: Elastic Load Balancing
+        api: https://docs.otc-service.com/api-ref/elastic-load-balancing/
+        umn: https://docs.otc-service.com/umn/elastic-load-balancing/
+      eip:
+        title: Elastic IP
+      nat:
+        title: NAT Gateway
+      plas:
+        title: Private Link Access Service
+      vpc:
+        title: Virtual Private Cloud
+      vpc_ep:
+        title: VPC Endpoint
+      vpn:
+        title: Virtual Private Network
+
+  md:
+    title: Management & Deployment
+    services:
+      ces:
+        title: Cloud Eye
+      cts:
+        title: Cloud Trace Service
+      iam:
+        title: Identity and Access Management
+      lts:
+        title: Log Tank Service
+      rts:
+        title: Resource Template Service
+      tms:
+        title: Tag Management Service
+
+  security:
+    title: Security
+    services:
+      anti_ddos:
+        title: Anti-DDoS
+      kms:
+        title: Key Management Service
+      vd:
+        title: Vulnerability Database
+        umn: https://nvd.nist.gov/
+      waf:
+        title: Web Application Firewall
+
+  application_services:
+    title: Application Services
+    services:
+      aom:
+        title: Application Operations Management
+      dms:
+        title: Distributed Message Service
+      smn:
+        title: Simple Message Notification
+      swr:
+        title: Software Repository for Container
+
+  database:
+    title: Database
+    services:
+      dcs:
+        title: Distributed Cache Service
+      dds:
+        title: Document Database Service
+      rds:
+        title: Relational Database Service
+
+  data_analysis:
+    title: Data Analysis
+    services:
+      css:
+        title: Cloud Search Service
+      dis:
+        title: Data Ingestion Service
+      dws:
+        title: Data Warehouse Service
+      mrs:
+        title: MapReduce Service
+      ma:
+        title: ModelArts
