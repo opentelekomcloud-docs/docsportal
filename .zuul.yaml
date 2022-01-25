@@ -3,3 +3,4 @@
     default-branch: main
     templates:
       - publish-otc-docs-pti
+      - publish-otc-docs-hc-pti
