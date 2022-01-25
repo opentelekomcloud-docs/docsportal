@@ -14,7 +14,6 @@ service_categories:
         title: Bare Metal Server
         api: https://docs.otc.t-systems.com/en-us/api/bms/en-us_topic_0143138428.html
         umn: https://docs.otc.t-systems.com/en-us/usermanual/bms/en-us_topic_0053536919.html
-        dev: https://docs.otc.t-systems.com/en-us/devg/bms/en-us_topic_0113605684.html
         links:
           - url: https://docs.otc.t-systems.com/en-us/devg/bms/en-us_topic_0113605684.html
             title: Developer Guide
@@ -50,24 +49,44 @@ service_categories:
     services:
       cbr:
         title: Cloud Backup and Recovery
+        api: https://docs.otc.t-systems.com/api/cbr/cbr_04_0001.html
         umn: https://docs.otc.t-systems.com/en-us/usermanual/cbr/cbr_01_0001.html
       csbs:
         title: Cloud Server Backup Service
+        api: https://docs.otc.t-systems.com/en-us/api/csbs/en-us_topic_0061309751.html
         umn: https://docs.otc.t-systems.com/en-us/usermanual/csbs/en-us_topic_0056584625.html
       evs:
         title: Elastic Volume Service
+        api: https://docs.otc.t-systems.com/en-us/api/evs/evs_04_0001.html
         umn: https://docs.otc.t-systems.com/en-us/usermanual/evs/evs_01_0119.html
+        links:
+          - url: https://docs.otc.t-systems.com/en-us/devg/evs/evs_03_0001.html
+            title: Developer Guide
       obs:
         title: Object Storage Service
+        api: https://docs.otc.t-systems.com/api/obs/en-us_topic_0031051947.html
         umn: https://docs.otc.t-systems.com/usermanual/obs/en-us_topic_0045853692.html
+        links:
+          - url: https://docs.otc.t-systems.com/ugs3cmd/obs/en-us_topic_0051518473.html
+            title: Third-party client (s3cmd)
+          - url: https://docs.otc.t-systems.com/api_swift/obs/obs_03_0001.html
+            title: Swift API reference
+          - url: https://docs.otc.t-systems.com/api_obs/obs/en-us_topic_0031665984.html
+            title: S3 API reference
       sdrs:
         title: Storage Disaster Recovery Service
+        api: https://docs.otc.t-systems.com/en-us/api/sdrs/sdrs_01_0000.html
         umn: https://docs.otc.t-systems.com/en-us/usermanual/sdrs/sdrs_pro_0000.html
       sfs:
         title: Scalable File Service
+        api: https://docs.otc.t-systems.com/en-us/api/sfs/sfs_02_0001.html
         umn: https://docs.otc.t-systems.com/en-us/usermanual/sfs/en-us_topic_0034428718.html
+        links:
+          - url: https://docs.otc.t-systems.com/en-us/api_cli/sfs/sfs_04_0001.html
+            title: Manila client reference
       vbs:
         title: Volume Backup Service
+        api: https://docs.otc.t-systems.com/en-us/api/vbs/en-us_topic_0061309333.html
         umn: https://docs.otc.t-systems.com/en-us/usermanual/vbs/en-us_topic_0015667845.html
 
   network:
@@ -75,88 +94,163 @@ service_categories:
     services:
       cdn:
         title: Content Delivery Network (Akamai)
+        umn: https://docs.otc.t-systems.com/cdn/doc/download/pdf/cdn-usermanual.pdf
       dc:
         title: Direct Connect
+        api: https://docs.otc.t-systems.com/api/dc/en-dc_topic_0055025300.html
+        umn: https://docs.otc.t-systems.com/usermanual/dc/en-us_topic_0032025288.html
       dns:
         title: Domain Name Service
+        api: https://docs.otc.t-systems.com/en-us/api/dns/dns_api_50000.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/dns/en-us_topic_0035467691.html
       elb:
         title: Elastic Load Balancing
         api: https://docs.otc-service.com/api-ref/elastic-load-balancing/
         umn: https://docs.otc-service.com/umn/elastic-load-balancing/
       eip:
         title: Elastic IP
+        api: https://docs.otc.t-systems.com/api/eip/eip_api01_0000.html
+        umn: https://docs.otc.t-systems.com/usermanual/eip/overview.html
       nat:
         title: NAT Gateway
+        api: https://docs.otc.t-systems.com/api/nat/nat_api_0047.html
+        umn: https://docs.otc.t-systems.com/usermanual/nat/nat_pro_0000.html
       plas:
         title: Private Link Access Service
+        api: https://docs.otc.t-systems.com/en-us/api/plas/en-us_topic_0218811267.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/plas/en-us_topic_0218777868.html
+        links:
+          - url: https://docs.otc.t-systems.com/en-us/plas/doc/download/excel/plas-ot.xlsm
+            title: Order form template
       vpc:
         title: Virtual Private Cloud
+        api: https://docs.otc.t-systems.com/api/vpc/en-us_topic_0050065465.html
+        umn: https://docs.otc.t-systems.com/usermanual/vpc/en-us_topic_0013748729.html
       vpc_ep:
         title: VPC Endpoint
+        api: https://docs.otc.t-systems.com/api/vpcep/vpcep_05_0000.html
+        umn: https://docs.otc.t-systems.com/usermanual/vpcep/en-us_topic_0131645194.html
       vpn:
         title: Virtual Private Network
+        api: https://docs.otc.t-systems.com/api/vpn/en_topic_0093011471.html
+        umn: https://docs.otc.t-systems.com/usermanual/vpn/en-us_topic_0035391332.html
 
   md:
     title: Management & Deployment
     services:
       ces:
         title: Cloud Eye
+        api: https://docs.otc.t-systems.com/api/ces/ces_03_0001.html
+        umn: https://docs.otc.t-systems.com/usermanual/ces/en-us_topic_0015479882.html
       cts:
         title: Cloud Trace Service
+        api: https://docs.otc.t-systems.com/en-us/api/cts/en-us_topic_0168602179.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/cts/en-us_topic_0030579718.html
       iam:
         title: Identity and Access Management
+        api: https://docs.otc.t-systems.com/en-us/api/iam/iam_02_0017.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/iam/iam_01_0026.html
       lts:
         title: Log Tank Service
+        api: https://docs.otc.t-systems.com/api/lts/lts_02_0001.html
+        umn: https://docs.otc.t-systems.com/usermanual/lts/lts_01_0001.html
       rts:
         title: Resource Template Service
+        api: https://docs.otc.t-systems.com/api/rts/en-us_topic_0082242144.html
+        umn: https://docs.otc.t-systems.com/usermanual/rts/rts_01_0001.html
       tms:
         title: Tag Management Service
+        api: https://docs.otc.t-systems.com/api/tms/en-us_topic_0056283725.html
+        umn: https://docs.otc.t-systems.com/usermanual/tms/en-us_topic_0056095606.html
 
   security:
     title: Security
     services:
       anti_ddos:
         title: Anti-DDoS
+        api: https://docs.otc.t-systems.com/en-us/api/antiddos/en-us_topic_0037386201.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/antiddos/en-us_topic_0023977447.html
       kms:
         title: Key Management Service
+        api: https://docs.otc.t-systems.com/en-us/api/kms/en-us_topic_00384375969.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/kms/en-us_topic_0034324884.html
       vd:
         title: Vulnerability Database
         umn: https://nvd.nist.gov/
       waf:
         title: Web Application Firewall
+        api: https://docs.otc.t-systems.com/api/waf/waf_02_0001.html
+        umn: https://docs.otc.t-systems.com/usermanual/waf/waf_01_0045.html
 
   application_services:
     title: Application Services
     services:
       aom:
         title: Application Operations Management
+        api: https://docs.otc.t-systems.com/api/aom/aom_04_0000.html
+        umn: https://docs.otc.t-systems.com/usermanual/aom/aom_02_1007.html
       dms:
         title: Distributed Message Service
+        api: https://docs.otc.t-systems.com/en-us/api/dms/en-us_topic_0036182510.html
+        umn: https://docs.otc.t-systems.com/en-us/usermanual/dms/en-us_topic_0044827396.html
+        links:
+          - url: https://docs.otc.t-systems.com/en-us/devg/dms/Kafka-summary.html
+            title: Development Guide
       smn:
         title: Simple Message Notification
+        api: https://docs.otc.t-systems.com/api/smn/en-us_topic_0036017316.html
+        umn: https://docs.otc.t-systems.com/usermanual/smn/en-us_topic_0043394885.html
       swr:
         title: Software Repository for Container
+        api: https://docs.otc.t-systems.com/api/swr/swr_02_0078.html
+        umn: https://docs.otc.t-systems.com/usermanual/swr/swr_03_0001.html
 
   database:
     title: Database
     services:
       dcs:
         title: Distributed Cache Service
+        api: https://docs.otc.t-systems.com/api/dcs/dcs-api-0417001.html
+        umn: https://docs.otc.t-systems.com/usermanual/dcs/en-us_topic_0054235826.html
       dds:
         title: Document Database Service
+        api: https://docs.otc.t-systems.com/api/dds/dds_api_reference.html
+        umn: https://docs.otc.t-systems.com/usermanual/dds/en-us_topic_user_guide.html
       rds:
         title: Relational Database Service
+        api: https://docs.otc.t-systems.com/api/rds/en-us_topic_0032347780.html
+        umn: https://docs.otc.t-systems.com/usermanual/rds/rds_01_0000.html
 
   data_analysis:
     title: Data Analysis
     services:
       css:
         title: Cloud Search Service
+        api: https://docs.otc.t-systems.com/api/css/css_03_0001.html
+        umn: https://docs.otc.t-systems.com/usermanual/css/css_04_0001.html
       dis:
         title: Data Ingestion Service
+        api: https://docs.otc.t-systems.com/api/dis/en-us_topic_0057474833.html
+        umn: https://docs.otc.t-systems.com/usermanual/dis/en-us_topic_0033058843.html
       dws:
         title: Data Warehouse Service
+        api: https://docs.otc.t-systems.com/api/dws/dws_02_0033.html
+        umn: https://docs.otc.t-systems.com/usermanual/dws/dws_01_0002.html
+        links:
+          - url: https://docs.otc.t-systems.com/devg/dws/dws_04_0001.html
+            title: Developer Guide
+          - url: https://docs.otc.t-systems.com/tg/dws/dws_07_0001.html
+            title: Tool Guide
+          - url: https://docs.otc.t-systems.com/fcode/dws/dws_08_0001.html
+            title: Error Code Reference
       mrs:
         title: MapReduce Service
+        api: https://docs.otc.t-systems.com/api/mrs/en-us_topic_0037324628.html
+        umn: https://docs.otc.t-systems.com/usermanual/mrs/mrs_08_0001.html
+        links:
+          - url: https://docs.otc.t-systems.com/cmpntguide/mrs/mrs_01_0756.html
+            title: Operation Guide
       ma:
         title: ModelArts
+        api: https://docs.otc.t-systems.com/api/modelarts/modelarts_03_1002.html
+        umn: https://docs.otc.t-systems.com/usermanual/modelarts/modelarts_01_0001.html

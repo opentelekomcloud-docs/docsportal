@@ -1,5 +1,5 @@
-API
-===
+REST API
+========
 
 .. navigator::
    :class: navigator-container
