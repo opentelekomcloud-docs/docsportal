@@ -1,6 +1,6 @@
-================================
-Open Telekom Cloud DevOps Portal
-================================
+========================================
+Open Telekom Cloud Service Documentation
+========================================
 
 .. navigator::
    :class: navigator-container
@@ -13,4 +13,3 @@ Open Telekom Cloud DevOps Portal
    services
    developer
    links
-
