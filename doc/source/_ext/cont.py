@@ -177,6 +177,8 @@ def container_item_html(self, node):
 
 
 def navigator_html(self, node):
+    # This method renders containers of service groups with links to the
+    # document of the specified type
     data = f'<div class="{node["class"]}">'
     for k, v in node['data']['service_categories'].items():
         data += (
@@ -184,7 +186,10 @@ def navigator_html(self, node):
             f"<h3>{v['title']}</h3><ul class='service-category'>"
         )
         for srv_k, srv_v in v['services'].items():
-            link = srv_v.get(node["link_type"], srv_k)
+            # if service has no proper link for the type - skip it
+            link = srv_v.get(node["link_type"], None)
+            if not link:
+                continue
             img = srv_k
             title = srv_v["title"]
             data += (
@@ -205,47 +210,44 @@ def navigator_html(self, node):
 
 
 def service_group_html(self, node):
-    data = f'<div class={node["class"]}><table class="table table-bordered table-hover">'
+    # This method renders containers per each service of the category with all
+    # links as individual list items
+    data = '<div class="navigator-container">'
     for k, v in node['data']['services'].items():
         img = k
         title = v["title"]
-        data += '<tr>'
-        # 1st column - title
         data += (
-            f'<td><div class="col-sm-2">'
-            f'<img src="_static/images/services/{img}.svg">'
-            f'</div><div class="col-sm-10">'
-            f'{title}</div>'
-            f'</td>'
+            f'<div class="navigator-item">'
+            f'<h3>{v["title"]}</h3><ul class="service-category">'
         )
-        # 3rd column - API-Ref
-        link = v.get("api")
-        data += (
-            f'<td>'
-            f'<a href="{link}">API Reference</a>'
-            f'</td>'
-        ) if link else (
-            f'<td></td>'
-        )
-        # 4th column - UMN
-        link = v.get("umn")
-        data += (
-            f'<td>'
-            f'<a href="{link}">User Manual</a>'
-            f'</td>'
-        ) if link else (
-            f'<td></td>'
-        )
+        # API-Ref and UMN
+        # NOTE(gtema): maybe we want some special icons
+        for doc_type in [
+            ('api', 'API Reference'),
+            ('umn', 'User Manual')
+        ]:
+            link = v.get(doc_type[0])
+            if link:
+                title = doc_type[1]
+                data += (
+                    f'<li><a href="{link}">'
+                    f'<div class="row">'
+                    f'<div class="col-md-10 col-sm-10 col-xs-10">{title}</div>'
+                    f'</div></a></li>'
+                )
+
         # all other links
         for link in v.get("links", []):
             data += (
-                f'<td>'
-                f'<a href="{link["url"]}">{link["title"]}</a>'
-                f'</td>'
+                f'<li><a href="{link["url"]}">'
+                f'<div class="row">'
+                f'<div class="col-md-10 col-sm-10 col-xs-10">{link["title"]}</div>'
+                f'</div></a></li>'
             )
         # Row end
-        data += '</tr>'
-    data += "</table></div>"
+        data += '</ul></div>'
+    data += '</div>'
+
     self.body.append(data)
     raise nodes.SkipNode
 
