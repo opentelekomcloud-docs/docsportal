@@ -3,8 +3,11 @@
 }
 
 scale-app-shell div.container {
-    margin-left: unset;
-    margin-right: unset;
+    // those override default padding set by scale
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 @media (min-width: 1600px) {
@@ -65,7 +68,7 @@ scale-app-shell div.container {
     text-align: right;
 }
 
-.navigator-item > img {
+.navigator-item img {
     height: 4em;
 }
 
