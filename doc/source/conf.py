@@ -13,6 +13,7 @@ import sys
 sys.path.append(os.path.abspath("./_ext"))
 
 extensions = [
+    'sphinx.ext.graphviz',
     'sphinx.ext.intersphinx',
     'otcdocstheme',
     'cont'
@@ -73,6 +74,8 @@ html_css_files = [
 pygments_style = 'native'
 
 templates_path = ['templates']
+
+graphviz_output_format = 'svg'
 
 # -- Options for LaTeX output ---------------------------------------------
 

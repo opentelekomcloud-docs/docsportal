@@ -9,3 +9,4 @@ Developer
    sdk
    iac
    drivers
+   blueprints

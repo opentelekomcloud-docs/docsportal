@@ -1,0 +1,23 @@
+digraph cce_vault {
+  graph [bgcolor=transparent compound=true fontcolor="#2D3436"
+  fontname="Sans-Serif" fontsize=10 rankdir="RL"]
+  node [fixedsize=false]
+  subgraph cluster_cce {
+	graph [bgcolor="#E5F5FD" shape=box style=rounded label="CCE" rankdir="LR"]
+    zk_svc [label="ZK Service" fixedsize=True fontsize=10 height=1.4
+  image="../_static/images/k8_svc.png" imagescale="true" labelloc=b
+  shape=none width=1 rank="min"]
+    zk_pod1 [label="ZK Pod" fixedsize=True fontsize=10 height=1.4 image="../_static/images/k8_pod.png" imagescale="true" labelloc=b shape=none width=1 rank="same"]
+    zk_pod2 [label="ZK Pod" fixedsize=True fontsize=10 height=1.4 image="../_static/images/k8_pod.png" imagescale="true" labelloc=b shape=none width=1 rank="same"]
+    zk_pod3 [label="ZK Pod" fixedsize=True fontsize=10 height=1.4 image="../_static/images/k8_pod.png" imagescale="true" labelloc=b shape=none width=1 rank="same"]
+    zk_pod1 -> zk_svc
+    zk_pod2 -> zk_svc
+    zk_pod3 -> zk_svc
+  }
+  vault -> zk_pod1
+  vault -> zk_pod2
+  vault -> zk_pod3
+  vault [label="Vault" fixedsize=True fontsize=10 height=1.4 image="../_static/images/vault.png" imagescale="true" labelloc=b shape=none width=1] 
+  user [label=Clients fixedsize=true fontsize=10 height=1.4 image="../_static/images/users.png" imagescale=true labelloc=b shape=none width=1]
+  zk_svc -> user [dir=both]
+}
