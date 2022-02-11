@@ -1,110 +1,49 @@
-.docs-book-wrapper {
-    margin-top: 0 !important;
+/* Limit image in the card title*/
+.card-img-top {
+  max-width: 4rem;
+  height: 4rem;
+  padding-top: 5px;
 }
 
-scale-app-shell div.container {
-    // those override default padding set by scale
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+/* decorate links in card */
+.card a {
+  text-decoration: none;
+}
+.card li:hover {
+  background: lightgray;
+}
+.card-title {
+  font-weight: unset;
 }
 
-@media (min-width: 1600px) {
-  .container {
-      width: 100% !important;
-      padding-left: 0 !important;
+/* Special boxes for cards */ 
+.card {
+  box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.2);
+  transition: transform .2s;
+}
+
+.card:hover {
+  box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.3);
+}
+
+/* on large screen we want card to be approx of the same size */
+@media (min-width:768px) {
+  .navigator-container .card {
+    min-height: 300px;
   }
+  /* disable push to bottom on the card */
+  .navigator-container .card .card-body {
+    flex: unset;
+  }
+
 }
 
-.service-box {
-  border: 1px solid #E8E8E8;
-  padding: 30px 20px;
-  border-radius: 4px;
-  min-height: 200px;
-  max-width: 300px;
-  margin-right: 20px !important;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-.service-box:hover {
-    box-shadow: 0 0 6px rgba(35, 173, 278, 1);
-}
-
-.service-box ul {
-    list-style-type: none;
-}
-
-.navigator-container {
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: flex-start;
-   padding: 0;
-   margin: 0;
-   list-style: none;
- }
-
-.navigator-item {
-    padding: 10px;
-    margin: 10px;
-    background: white;
-    width: 300px;
-    min-height: 200px;
-    color: #191919;
-    text-align: left;
-    box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.2);
-    transition: transform .2s;
-}
-
-.navigator-item > p {
-    text-align: justify;
-}
-
-.navigator-item > h3 {
-    margin-top: 10px;
-    text-align: right;
-}
-
-.navigator-item img {
-    height: 4em;
-}
-
-.navigator-item > ul {
-    list-style-type: none;
-    padding-left: 10px;
-}
-
-//.navigator-item > ul > li {
-//    margin-bottom: 10px;
-//    padding: 5px;
-//}
-.navigator-item > ul > li:hover {
-    background: lightgray;
-}
-
-.navigator-item:hover {
-    // transform: scale(1.05);
-    box-shadow: 0px 2px 15px 1px rgba(0,0,0,0.3);
-}
-
-.navigator-item > ul > li > a > div > div > img {
+/* limit icon size in the card li */
+.navigator-container .card > ul > li > a > div > div > img {
     max-height: 20px;
     max-width: 20px;
 }
 
-.navigator-container a {
-    color: #191919 !important;
-}
-
-.navigator-container a:hover {
-    text-decoration: none;
-    background: gray;
-}
-
-.service-group img {
-    max-width: 48px;
-    max-height: 48px;
+.navigator-container .card li {
+  padding: 0.2rem 1rem;
 }
