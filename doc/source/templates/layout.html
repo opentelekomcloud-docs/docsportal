@@ -13,24 +13,21 @@
   {%- block relbar1 %}{% endblock %}
 
   {%- block content %}
-      <div class="container docs-book-wrapper">
-        <div class="row">
-          <div class="col-lg-9 col-md-8 col-sm-8 col-lg-push-3 col-md-push-4 col-sm-push-4">
-  {% include 'titlerow.html' %}
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="docs-body" role="main">
-  {% block body %}{% endblock %}
-                </div>
-              </div>
-            </div>
+      <div class="container-xxl my-md-4 docs-book-wrapper">
+	{% include 'sidebartoc.html' %}
+	<div class="row">
+        <main class="docs-main col-12 col-xl-11" role="main">
+          <div class="docs-content ps-lg-4">
+            {% block body %}{% endblock %}
           </div>
-  {% include 'sidebartoc.html' %}
-        </div>
+        </main>
+	</div>
       </div>
   {%- endblock %}
 
   {%- block relbar2 %}{% endblock %}
+
+
 
   {%- block footer %}
   {% include 'footer.html' %}
@@ -38,3 +35,4 @@
   {% block script_footer %}{% endblock %}
   {%- endblock %}
 </div>
+

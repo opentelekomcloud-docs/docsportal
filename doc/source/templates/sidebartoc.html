@@ -1,15 +1,15 @@
-<div class="col-lg-3 col-md-4 col-sm-4 col-lg-pull-9 col-md-pull-8 col-sm-pull-8 docs-sidebar">
-    <div class="docs-sidebar-toc">
-    {%- if theme_display_global_toc_section %}
-      <div class="docs-sidebar-section" id="table-of-contents">
-        <a href="{{ pathto(master_doc) }}"
-            class="docs-sidebar-section-title"><h4>Open Telekom Cloud Documentation</h4></a>
-        {%- if theme_sidebar_mode == 'toc' %}
-        {{ toc }}
-        {%- elif theme_sidebar_mode == 'toctree' %}
-        {{ toctree(maxdepth=2, includehidden=True, collapse=False) }}
-        {%- endif %}
-      </div>
-    {%- endif %}
+<aside class="docs-sidebar">
+  <div class="docs-sidebar-toc collapse" aria-label="Docs navigation" id="docs-sidebar-nav">
+  {%- if theme_display_global_toc_section %}
+    <div class="docs-sidebar-section" id="table-of-contents">
+      <a href="{{ pathto(master_doc) }}" class="docs-sidebar-section-title"><h4>Open Telekom Cloud Documentation</h4></a>
+      {%- if theme_sidebar_mode == 'toc' %}
+      {{ toc }}
+      {%- elif theme_sidebar_mode == 'toctree' %}
+      {{ toctree(maxdepth=2,includehidden=True, collapse=False) }}
+      {%- endif %}
     </div>
+  {%- endif %}
   </div>
+</aside>
+
