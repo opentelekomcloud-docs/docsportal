@@ -124,7 +124,8 @@ class Navigator(Directive):
 class ContainerItem(Directive):
     node_class = container_item
     option_spec = {
-        'title': directives.unchanged
+        'title': directives.unchanged,
+        'image': directives.unchanged,
     }
 
     has_content = True
@@ -132,18 +133,16 @@ class ContainerItem(Directive):
     def run(self):
         doctree_node = container_item()
         doctree_node['title'] = self.options['title']
+        if 'image' in self.options:
+            doctree_node['image'] = self.options['image']
         services = []
         for ent in self.content:
             _srv = ent.strip('- ')
-            # Split on first ":"
-            srv_parts = _srv.split(':', 1)
-            key = srv_parts[0]
-            data_parts = srv_parts[1].split("|")
+            data_parts = _srv.split("|")
             title = data_parts[0]
-            href = data_parts[1] if len(data_parts) > 1 else key
+            href = data_parts[1] if len(data_parts) > 1 else '#'
             services.append(
                 dict(
-                    key=key,
                     title=title,
                     href=href
                 )
@@ -153,25 +152,32 @@ class ContainerItem(Directive):
 
 
 def container_item_html(self, node):
-    tmpl = """
-        <div class="navigator-item">
-            <h3>%(title)s</h3>
+    tmpl = f"""
+        <div class="col">
+          <div class="card">
+            %(img)s
+            <div class="card-body">
+              <h5 class="card-title">%(title)s</h5>
+            </div>
             %(data)s
+          </div>
         </div>
         """
 
     node['data'] = (
-        "<ul class='service-category'>" +
-        "".join([('<li><a href="%(href)s">'
-                  '<div class="row">'
-                  '<div class="col-md-2">'
-                  '<img src="_static/images/%(key)s.svg">'
-                  '</div>'
+        "<ul class='list-group list-group-flush'>" +
+        "".join([('<li class="list-group-item"><a href="%(href)s">'
                   '<div class="col-md-10">%(title)s</div>'
-                  '</div></a></li>'
+                  '</a></li>'
                   % x)
                  for x in node['services']]) +
         "</ul>")
+    node['img'] = ''
+    if 'image' in node and node['image']:
+        node['img'] = (
+            f'<img src="{node["image"]}" '
+            'class="card-img-top mx-auto">'
+        )
     self.body.append(tmpl % node)
     raise nodes.SkipNode
 
@@ -179,11 +185,13 @@ def container_item_html(self, node):
 def navigator_html(self, node):
     # This method renders containers of service groups with links to the
     # document of the specified type
-    data = f'<div class="{node["class"]}">'
+    data = f'<div class="{node["class"]} row row-cols-1 row-cols-md-3 g-4">'
     for k, v in node['data']['service_categories'].items():
         data += (
-            f'<div class="navigator-item">'
-            f"<h3>{v['title']}</h3><ul class='service-category'>"
+            f'<div class="col"><div class="card">'
+            f'<div class="card-body">'
+            f'<h5 class="card-title">{v["title"]}</h5></div>'
+            f'<ul class="list-group list-group-flush">'
         )
         for srv_k, srv_v in v['services'].items():
             # if service has no proper link for the type - skip it
@@ -193,15 +201,15 @@ def navigator_html(self, node):
             img = srv_k
             title = srv_v["title"]
             data += (
-                f'<li><a href="{link}">'
+                f'<li class="list-group-item"><a href="{link}">'
                 f'<div class="row">'
-                f'<div class="col-md-2 col-sm-2 col-xs-2">'
+                f'<div class="col-2">'
                 f'<img src="_static/images/services/{img}.svg">'
                 f'</div>'
-                f'<div class="col-md-10 col-sm-10 col-xs-10">{title}</div>'
+                f'<div class="col-10">{title}</div>'
                 f'</div></a></li>'
             )
-        data += '</ul></div>'
+        data += '</ul></div></div>'
 
     data += '</div>'
 
@@ -212,13 +220,14 @@ def navigator_html(self, node):
 def service_group_html(self, node):
     # This method renders containers per each service of the category with all
     # links as individual list items
-    data = '<div class="navigator-container">'
+    data = '<div class="row row-cols-1 row-cols-md-3 g-4">'
     for k, v in node['data']['services'].items():
-        img = k
         title = v["title"]
         data += (
-            f'<div class="navigator-item">'
-            f'<h3>{v["title"]}</h3><ul class="service-category">'
+            f'<div class="col"><div class="card">'
+            f'<div class="card-body"><h5 class="card-title">'
+            f'{v["title"]}</h5></div>'
+            f'<ul class="list-group list-group-flush">'
         )
         # API-Ref and UMN
         # NOTE(gtema): maybe we want some special icons
@@ -230,7 +239,7 @@ def service_group_html(self, node):
             if link:
                 title = doc_type[1]
                 data += (
-                    f'<li><a href="{link}">'
+                    f'<li class="list-group-item"><a href="{link}">'
                     f'<div class="row">'
                     f'<div class="col-md-10 col-sm-10 col-xs-10">{title}</div>'
                     f'</div></a></li>'
@@ -239,13 +248,13 @@ def service_group_html(self, node):
         # all other links
         for link in v.get("links", []):
             data += (
-                f'<li><a href="{link["url"]}">'
+                f'<li class="list-group-item"><a href="{link["url"]}">'
                 f'<div class="row">'
                 f'<div class="col-md-10 col-sm-10 col-xs-10">{link["title"]}</div>'
                 f'</div></a></li>'
             )
         # Row end
-        data += '</ul></div>'
+        data += '</ul></div></div>'
     data += '</div>'
 
     self.body.append(data)

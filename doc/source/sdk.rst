@@ -1,20 +1,23 @@
 SDK
 ===
 
-.. container:: navigator-container
+.. container:: row row-cols-1 row-cols-md-3 g-4
 
    .. container_item::
       :title: Python
+      :image: _static/images/python.svg
 
-      - python: OTC Extensions|https://docs.otc-service.com/python-otcextensions
+      - OTC Extensions|https://docs.otc-service.com/python-otcextensions
 
    .. container_item::
       :title: Golang
+      :image: _static/images/golang.svg
 
-      - golang: Golang SDK|https://github.com/opentelekomcloud/gophertelekomcloud/
+      - Golang SDK|https://github.com/opentelekomcloud/gophertelekomcloud/
 
    .. container_item::
       :title: JavaScript
+      :image: _static/images/javascript.svg
 
-      - javascript: JavaScript SDK|https://github.com/opentelekomcloud/oms/
+      - JavaScript SDK|https://github.com/opentelekomcloud/oms/
 

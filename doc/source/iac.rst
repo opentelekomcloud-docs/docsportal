@@ -1,14 +1,16 @@
 Infrastructure As a Code
 ========================
 
-.. container:: navigator-container
+.. container:: row row-cols-1 row-cols-md-3 g-4
 
    .. container_item::
       :title: Ansible
+      :image: _static/images/ansible.svg
 
-      - ansible: Ansible Collection|https://docs.otc-service.com/ansible-collection-cloud
+      - Ansible Collection|https://docs.otc-service.com/ansible-collection-cloud
 
    .. container_item::
       :title: Terraform
+      :image: _static/images/terraform.svg
 
-      - terraform: Open Telekom Cloud Provider|https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/latest/docs
+      - Open Telekom Cloud Provider|https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/latest/docs
