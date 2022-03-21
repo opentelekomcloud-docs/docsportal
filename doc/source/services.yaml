@@ -30,7 +30,7 @@ service_categories:
       ecs:
         title: Elastic Cloud Server
         api: https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020805967.html
-        umn: https://docs.otc.t-systems.com/en-us/usermanual/ecs/en-us_topic_0092494580.html
+        umn: https://docs-beta.otc.t-systems.com/umn/elastic-cloud-server/
         links:
           - url: https://docs.otc.t-systems.com/en-us/devg/ecs/en-us_topic_0134192990.html
             title: Developer Guide
@@ -253,4 +253,4 @@ service_categories:
       ma:
         title: ModelArts
         api: https://docs.otc.t-systems.com/api/modelarts/modelarts_03_1002.html
-        umn: https://docs.otc.t-systems.com/usermanual/modelarts/modelarts_01_0001.html
+        umn: https://docs-beta.otc.t-systems.com/umn/modelarts/
