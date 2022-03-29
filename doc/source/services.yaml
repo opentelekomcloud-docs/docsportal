@@ -29,7 +29,7 @@ service_categories:
         umn: https://docs.otc.t-systems.com/usermanual/deh/deh_01_0003.html
       ecs:
         title: Elastic Cloud Server
-        api: https://docs.otc.t-systems.com/en-us/api/ecs/en-us_topic_0020805967.html
+        api: https://docs-beta.otc.t-systems.com/api-ref/elastic-cloud-server/
         umn: https://docs-beta.otc.t-systems.com/umn/elastic-cloud-server/
         links:
           - url: https://docs.otc.t-systems.com/en-us/devg/ecs/en-us_topic_0134192990.html
@@ -252,5 +252,5 @@ service_categories:
             title: Operation Guide
       ma:
         title: ModelArts
-        api: https://docs.otc.t-systems.com/api/modelarts/modelarts_03_1002.html
+        api: https://docs-beta.otc.t-systems.com/api-ref/modelarts/
         umn: https://docs-beta.otc.t-systems.com/umn/modelarts/
