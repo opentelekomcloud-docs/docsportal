@@ -32,7 +32,7 @@ service_categories:
         api: https://docs-beta.otc.t-systems.com/api-ref/elastic-cloud-server/
         umn: https://docs-beta.otc.t-systems.com/umn/elastic-cloud-server/
         links:
-          - url: https://docs.otc.t-systems.com/en-us/devg/ecs/en-us_topic_0134192990.html
+          - url: https://docs-beta.otc.t-systems.com/dev/elastic-cloud-server/
             title: Developer Guide
       ims:
         title: Image Management Service
