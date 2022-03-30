@@ -32,7 +32,7 @@ service_categories:
         api: https://docs-beta.otc.t-systems.com/api-ref/elastic-cloud-server/
         umn: https://docs-beta.otc.t-systems.com/umn/elastic-cloud-server/
         links:
-          - url: https://docs.otc.t-systems.com/en-us/devg/ecs/en-us_topic_0134192990.html
+          - url: https://docs-beta.otc.t-systems.com/dev/elastic-cloud-server/
             title: Developer Guide
       ims:
         title: Image Management Service
@@ -254,3 +254,14 @@ service_categories:
         title: ModelArts
         api: https://docs-beta.otc.t-systems.com/api-ref/modelarts/
         umn: https://docs-beta.otc.t-systems.com/umn/modelarts/
+
+  others:
+    title: Others
+    services:
+      psd:
+        title: Status Dashboard
+        umn: https://docs.otc.t-systems.com/sd/index.html
+      edb:
+        title: Enterprise Dashboard
+        api: https://docs-beta.otc.t-systems.com/api-ref/enterprise-dashboard/
+        umn: https://docs-beta.otc.t-systems.com/umn/enterprise-dashboard/
