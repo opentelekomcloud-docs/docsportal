@@ -1,5 +1,5 @@
-Storage Services
-================
+Storage
+=======
 
 .. service_group::
    :class: service-group

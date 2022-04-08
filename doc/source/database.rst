@@ -1,5 +1,5 @@
-Database Services
-=================
+Database
+========
 
 .. service_group::
    :class: service-group

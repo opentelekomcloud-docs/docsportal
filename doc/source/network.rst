@@ -1,5 +1,5 @@
-Network Services
-================
+Network
+=======
 
 .. service_group::
    :class: service-group

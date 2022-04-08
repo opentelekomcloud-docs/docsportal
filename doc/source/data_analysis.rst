@@ -1,5 +1,5 @@
-Data Analysis Services
-======================
+Data Analysis
+=============
 
 .. service_group::
    :class: service-group

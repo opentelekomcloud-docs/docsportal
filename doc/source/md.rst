@@ -1,5 +1,5 @@
-Management and Deployment Services
-==================================
+Management and Deployment
+=========================
 
 .. service_group::
    :class: service-group
