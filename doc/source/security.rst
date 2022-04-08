@@ -1,5 +1,5 @@
-Security Services
-=================
+Security
+========
 
 .. service_group::
    :class: service-group

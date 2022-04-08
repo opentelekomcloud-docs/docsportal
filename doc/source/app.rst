@@ -1,5 +1,5 @@
-Application Services
-====================
+Application
+===========
 
 .. service_group::
    :class: service-group
