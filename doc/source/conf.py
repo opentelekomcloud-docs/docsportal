@@ -86,5 +86,5 @@ latex_documents = [
 
 # -- Intersphinx
 intersphinx_mapping = {
-#    'otce': ('https://docs.otc-service.com/python-otcextensions', None)
+    'security': ('https://docs-beta.otc.t-systems.com/security', None)
 }
