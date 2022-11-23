@@ -184,6 +184,8 @@ def service_group_html(self, node):
     data = '<div class="row row-cols-1 row-cols-md-3 g-4">'
     for k, v in METADATA.services_with_docs_by_category(
             node['service_category'], environment=node['environment']).items():
+        if not v.get("docs"):
+            continue
         title = v["service_title"]
         data += (
             f'<div class="col"><div class="card">'
