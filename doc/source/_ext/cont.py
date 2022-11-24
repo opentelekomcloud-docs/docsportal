@@ -222,7 +222,6 @@ def setup(app):
     app.add_directive("container_item", ContainerItem)
     app.add_directive("navigator", Navigator)
     app.add_directive("service_group", ServiceGroup)
-    print(app.config.config_values)
 
     return {
         'version': '0.1',
