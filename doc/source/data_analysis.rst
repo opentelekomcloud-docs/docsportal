@@ -1,7 +1,6 @@
-Data Analysis
-=============
+Big Data and Data Analysis
+==========================
 
 .. service_group::
    :class: service-group
-   :data: services.yaml
-   :category: data_analysis
+   :service_category: big_data

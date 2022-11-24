@@ -18,6 +18,8 @@ from docutils.parsers.rst import Directive
 from docutils.parsers.rst import directives
 from sphinx.util import logging
 
+import otc_metadata.services
+
 LOG = logging.getLogger(__name__)
 
 
@@ -33,47 +35,23 @@ class container_item(nodes.General, nodes.Element):
     pass
 
 
-YAML_CACHE = {}
+METADATA = otc_metadata.services.Services()
 
 
 class ServiceGroup(Directive):
     node_class = service_group
     option_spec = {
         'class': directives.unchanged,
-        'data': directives.unchanged_required,
-        'category': directives.unchanged_required
+        'service_category': directives.unchanged_required,
+        'environment': directives.unchanged_required
     }
 
     has_content = False
 
-    def _load_data(self, fpath):
-        global YAML_CACHE
-        if fpath in YAML_CACHE:
-            return YAML_CACHE[fpath]
-        data = {}
-        try:
-            with open(fpath, 'r') as stream:
-                data = yaml.safe_load(stream)
-        except IOError:
-            LOG.warning(
-                "Parameters file not found, %s", fpath,
-                location=(self.state.document.settings.env.docname, None))
-            return
-        except yaml.YAMLError as exc:
-            LOG.exception(
-                exc_info=exc,
-                msg="Error while parsing file [%s]." % fpath)
-            raise
-
-        YAML_CACHE[fpath] = data
-        return data
-
     def run(self):
         node = self.node_class()
-        _, fpath = self.state.document.settings.env.relfn2path(
-            self.options['data'])
-        data = self._load_data(fpath)
-        node['data'] = data['service_categories'][self.options['category']]
+        node['service_category'] = self.options.get('service_category')
+        node['environment'] = self.options.get('environment', 'public')
         node['class'] = self.options.get('class', 'navigator-container')
         return [node]
 
@@ -82,41 +60,16 @@ class Navigator(Directive):
     node_class = navigator
     option_spec = {
         'class': directives.unchanged,
-        'data': directives.unchanged_required,
-        'link_type': directives.unchanged
+        'document_type': directives.unchanged,
+        'environment': directives.unchanged_required
     }
 
     has_content = False
 
-    def _load_data(self, fpath):
-        global YAML_CACHE
-        if fpath in YAML_CACHE:
-            return YAML_CACHE[fpath]
-        data = {}
-        try:
-            with open(fpath, 'r') as stream:
-                data = yaml.safe_load(stream)
-        except IOError:
-            LOG.warning(
-                "Parameters file not found, %s", fpath,
-                location=(self.state.document.settings.env.docname, None))
-            return
-        except yaml.YAMLError as exc:
-            LOG.exception(
-                exc_info=exc,
-                msg="Error while parsing file [%s]." % fpath)
-            raise
-
-        YAML_CACHE[fpath] = data
-        return data
-
     def run(self):
         node = self.node_class()
-        _, fpath = self.state.document.settings.env.relfn2path(
-            self.options['data'])
-        self.data = self._load_data(fpath)
-        node['data'] = self.data
-        node['link_type'] = self.options['link_type']
+        node['document_type'] = self.options['document_type']
+        node['environment'] = self.options.get('environment', 'public')
         node['class'] = self.options.get('class', 'navigator-container')
         return [node]
 
@@ -186,29 +139,37 @@ def navigator_html(self, node):
     # This method renders containers of service groups with links to the
     # document of the specified type
     data = f'<div class="{node["class"]} row row-cols-1 row-cols-md-3 g-4">'
-    for k, v in node['data']['service_categories'].items():
+
+    for cat in METADATA.service_categories:
+        category = cat["name"]
+        category_title = cat["title"]
         data += (
             f'<div class="col"><div class="card">'
             f'<div class="card-body">'
-            f'<h5 class="card-title">{v["title"]}</h5></div>'
+            f'<h5 class="card-title">{category_title}</h5></div>'
             f'<ul class="list-group list-group-flush">'
         )
-        for srv_k, srv_v in v['services'].items():
-            # if service has no proper link for the type - skip it
-            link = srv_v.get(node["link_type"], None)
-            if not link:
-                continue
-            img = srv_k
-            title = srv_v["title"]
-            data += (
-                f'<li class="list-group-item"><a href="{link}">'
-                f'<div class="row">'
-                f'<div class="col-2">'
-                f'<img src="_static/images/services/{img}.svg">'
-                f'</div>'
-                f'<div class="col-10">{title}</div>'
-                f'</div></a></li>'
-            )
+        for k, v in METADATA.services_with_docs_by_category(
+                category=category, environment=node['environment']).items():
+            title = v["service_title"]
+            for doc in v.get("docs", []):
+                if "link" not in doc:
+                    continue
+                if "type" not in doc or doc["type"] != node["document_type"]:
+                    continue
+                title = doc["service_title"]
+                link = doc.get("link")
+                img = v["service_type"]
+                data += (
+                    f'<li class="list-group-item"><a href="{link}">'
+                    f'<div class="row">'
+                    f'<div class="col-2">'
+                    f'<img src="_static/images/services/{img}.svg">'
+                    f'</div>'
+                    f'<div class="col-10">{title}</div>'
+                    f'</div></a></li>'
+                )
+
         data += '</ul></div></div>'
 
     data += '</div>'
@@ -221,36 +182,26 @@ def service_group_html(self, node):
     # This method renders containers per each service of the category with all
     # links as individual list items
     data = '<div class="row row-cols-1 row-cols-md-3 g-4">'
-    for k, v in node['data']['services'].items():
-        title = v["title"]
+    for k, v in METADATA.services_with_docs_by_category(
+            node['service_category'], environment=node['environment']).items():
+        if not v.get("docs"):
+            continue
+        title = v["service_title"]
         data += (
             f'<div class="col"><div class="card">'
             f'<div class="card-body"><h5 class="card-title">'
-            f'{v["title"]}</h5></div>'
+            f'{title}</h5></div>'
             f'<ul class="list-group list-group-flush">'
         )
-        # API-Ref and UMN
-        # NOTE(gtema): maybe we want some special icons
-        for doc_type in [
-            ('api', 'API Reference'),
-            ('umn', 'User Manual')
-        ]:
-            link = v.get(doc_type[0])
-            if link:
-                title = doc_type[1]
-                data += (
-                    f'<li class="list-group-item"><a href="{link}">'
-                    f'<div class="row">'
-                    f'<div class="col-md-10 col-sm-10 col-xs-10">{title}</div>'
-                    f'</div></a></li>'
-                )
-
-        # all other links
-        for link in v.get("links", []):
+        for doc in v.get("docs", []):
+            if not "link" in doc:
+                continue
+            title = doc["title"]
+            link = doc.get("link")
             data += (
-                f'<li class="list-group-item"><a href="{link["url"]}">'
+                f'<li class="list-group-item"><a href="{link}">'
                 f'<div class="row">'
-                f'<div class="col-md-10 col-sm-10 col-xs-10">{link["title"]}</div>'
+                f'<div class="col-md-10 col-sm-10 col-xs-10">{title}</div>'
                 f'</div></a></li>'
             )
         # Row end

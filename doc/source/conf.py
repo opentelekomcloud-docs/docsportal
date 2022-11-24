@@ -18,6 +18,8 @@ extensions = [
     'cont'
 ]
 
+smartquotes = False
+
 # openstackdocstheme options
 otcdocs_repo_name = 'opentelekomcloud-infra/docsportal'
 
