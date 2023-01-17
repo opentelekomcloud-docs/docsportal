@@ -1,8 +1,8 @@
 Glossary
 ========
 
-
-**A-E**
+A-E
+---
 
 -  A
 
@@ -815,7 +815,8 @@ Glossary
 
    A process of data transmission from the source to the target database.
 
-**F-J**
+F-J
+---
 
 -  F
 
@@ -1144,7 +1145,8 @@ Glossary
    Job parameters are the running parameters specified when a training job is submitted. You can save complex parameters and reuse them during subsequent job
    creation.
 
-**K-O**
+K-O
+---
 
 -  K
 
@@ -1520,7 +1522,8 @@ Glossary
 
    A computer program that manages computer hardware and software resources.
 
-**P-T**
+P-T
+---
 
 -  P
 
@@ -2323,7 +2326,8 @@ Glossary
    authoritative DNS server, but directly returns a result from the record in its cache. The time period during resource records are cached on the local DNS
    server is specified by the TTL value.
 
-**U-Z**
+U-Z
+---
 
 -  U
 

@@ -1,18 +1,21 @@
 Permissions
 ===========
 
-**Permission Description**
+Permission Description
+----------------------
 
 Permissions are user management and cloud service management permissions. User management involves creating, deleting, and modifying users and granting
 permissions to users. Cloud service management involves creating, viewing, modifying, and deleting resources of cloud services. After granting user management
 and cloud service management permissions to a user group, the users added to the user group can inherit permissions of the user group. User group-specific
 permissions simplify permission management.
 
-**Permission Relationship**
+Permission Relationship
+-----------------------
 
 .. figure:: /_static/images/permissions.png
 
-**Default Permissions**
+Default Permissions
+-------------------
 
 The system provides two types of default permissions: user management and cloud service management.
 
