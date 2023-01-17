@@ -11,4 +11,4 @@ Open Telekom Cloud Service Documentation
 
    services
    developer
-   additional
+   additional/index
