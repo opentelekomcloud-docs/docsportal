@@ -1,9 +1,6 @@
 Glossary
 ========
 
-A-E
----
-
 -  A
 
 ..
@@ -815,9 +812,6 @@ A-E
 
    A process of data transmission from the source to the target database.
 
-F-J
----
-
 -  F
 
 ..
@@ -1144,9 +1138,6 @@ F-J
 
    Job parameters are the running parameters specified when a training job is submitted. You can save complex parameters and reuse them during subsequent job
    creation.
-
-K-O
----
 
 -  K
 
@@ -1521,9 +1512,6 @@ K-O
    **Operating system**
 
    A computer program that manages computer hardware and software resources.
-
-P-T
----
 
 -  P
 
@@ -2325,9 +2313,6 @@ P-T
    of time. During this period, if the local DNS server receives resolution requests of this domain name again, it does not request the record from the
    authoritative DNS server, but directly returns a result from the record in its cache. The time period during resource records are cached on the local DNS
    server is specified by the TTL value.
-
-U-Z
----
 
 -  U
 
