@@ -57,7 +57,7 @@ Procedure
    For details on how to obtain your region name, service name, AK/SK, project ID, and domain ID, see `Obtaining Required
    Information <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328009.html>`__.
 
-   .. code:: screen
+   .. code-block:: java
 
       //TODO: Replace eu-de with the name of the region in which the service to be accessed is located.
       private static final String region = "eu-de";
@@ -102,7 +102,7 @@ Procedure
 
    a. In the main method in the **Demo.java** file, replace **project_id** with the sub-project ID of the API.
 
-      .. code:: screen
+      .. code-block:: java
 
          //TODO: Test the API
          String url = "https://vpc.eu-de.otc.t-systems.com/v1/{project_id}/vpcs/{vpc_id}";
@@ -110,7 +110,7 @@ Procedure
 
    b. Locate the following lines in the **AccessServiceImpl.java** file, delete "//" to activate the code line, and replace the sub-project ID with the actual one.
 
-      .. code:: screen
+      .. code-block:: java
 
          //TODO: Add special headers.
          //request.addHeader("X-Project-Id", "xxxxx");
