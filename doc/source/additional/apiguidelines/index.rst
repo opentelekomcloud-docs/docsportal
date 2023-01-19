@@ -2,7 +2,7 @@ API Usage Guidelines
 ====================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    overview
    overview_of_rest_apis

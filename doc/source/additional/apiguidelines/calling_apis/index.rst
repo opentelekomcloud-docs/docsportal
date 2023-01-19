@@ -2,7 +2,7 @@ Calling APIs
 ============
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    obtaining_required_information
    token_authentication

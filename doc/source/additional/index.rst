@@ -2,7 +2,7 @@ Additional Resources
 ====================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    apiguidelines/index
    endpoints

@@ -49,6 +49,7 @@ The AK/SK authentication process is as follows:
    -  The cached token is valid for 15 minutes by default.
 
 .. toctree::
+   :maxdepth: 1
 
    generating_an_ak_and_sk
    signing_a_request
