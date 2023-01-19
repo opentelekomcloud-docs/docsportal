@@ -31,14 +31,20 @@ Procedure
 
 ..
 
-   | **Figure 1** Selecting an existing project
-   | |https://docs.otc.t-systems.com/en-us/api/apiug/en-us_image_0132432937.png|
+   .. figure:: /_static/images/sample_code_select_project.png
+      :alt: **Figure 1** Selecting an existing project
 
-   | **Figure 2** Selecting the sample code file after decompression
-   | |https://docs.otc.t-systems.com/en-us/api/apiug/en-us_image_0132432939.png|
+      **Figure 1** Selecting an existing project
 
-   | **Figure 3** Structure of the project after importing
-   | |https://docs.otc.t-systems.com/en-us/api/apiug/en-us_image_0132518357.png|
+   .. figure:: /_static/images/sample_code_select_project.png
+      :alt: **Figure 2** Selecting the sample code file after decompression
+
+      **Figure 2** Selecting the sample code file after decompression
+
+   .. figure:: /_static/images/sample_code_project_structure.png
+      :alt: **Figure 3** Structure of the project after importing
+
+      **Figure 3** Structure of the project after importing
 
 3. Edit the main method in the **Demo.java** file.
 

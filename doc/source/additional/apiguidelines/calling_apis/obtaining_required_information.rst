@@ -96,8 +96,10 @@ how to obtain a project ID:
 
    On the **My Credential** page, view project IDs in the project list.
 
-   | **Figure 1** Viewing project IDs
-   | |https://docs.otc.t-systems.com/en-us/api/apiug/en-us_image_0132451568.jpg|
+   .. figure:: /_static/images/viewing_project_ids.jpg
+      :alt: **Figure 1** Viewing project IDs
+
+      **Figure 1** Viewing project IDs
 
    In multi-project scenarios, expand the region, and obtain your sub-project ID from the **Project ID** column.
 
@@ -115,5 +117,7 @@ steps:
 
    On the **My Credential** page, view the domain name and domain ID.
 
-   | **Figure 2** Viewing the domain name and domain ID
-   | |https://docs.otc.t-systems.com/en-us/api/apiug/en-us_image_0132453772.png|
+   .. figure:: /_static/images/viewing_domain_id.png
+      :alt: **Figure 2** Viewing the domain name and domain ID
+
+      **Figure 2** Viewing the domain name and domain ID

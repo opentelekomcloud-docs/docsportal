@@ -57,11 +57,15 @@ value of the X-Subject-Token header in the response is the token.
 
    The following figures illustrate how to use Postman to manually obtain a token.
 
-   | **Figure 1** Example request
-   | |https://docs.otc.t-systems.com/en-us/api/apiug/en-us_image_0139098594.png|
+   .. figure:: /_static/images/token_authentication_example_request.png
+      :alt: **Figure 1** Example request
 
-   | **Figure 2** Obtain **X-Subject-Token** from the header of the response message.
-   | |https://docs.otc.t-systems.com/en-us/api/apiug/en-us_image_0139099203.png|
+      **Figure 1** Exmple request
+
+   .. figure:: /_static/images/obtain_x-subject-token.png
+      :alt: **Figure 2** Obtain **X-Subject-Token** from the header of the response message.
+
+      **Figure 2** Obtain **X-Subject-Token** from the header of the response message.
 
 3.  Call a service API, add the **X-Auth-Token** header with the token obtained in
 `2 <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328003.html#apig-en-api-180328003__li2615608112249>`__.

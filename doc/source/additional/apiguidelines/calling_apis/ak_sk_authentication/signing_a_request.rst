@@ -13,9 +13,7 @@ Signing a Request
 
    c. Add the decompressed **.jar** file to a project, for example, Eclipse, as a dependency package. See the following figure.
 
-..
-
-   |https://docs.otc.t-systems.com/en-us/api/apiug/en-us_image_0132557229.png|
+   .. figure:: /_static/images/sdkdemo_properties.png
 
 2. Sign the request.
 
