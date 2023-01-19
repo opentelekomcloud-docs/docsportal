@@ -29,6 +29,8 @@ A request URI consists of the following parts:
 Although a request URI is a part of a request header, most programming languages or frameworks require the request URI to be separately transmitted, rather than
 being conveyed in a request message.
 
+.. _apig-en-api-180328002__t1797260c744a4e1a85d354f259cae55a:
+
 .. table:: **Table 1** URI parameter description
 
    +-------------------------------------------------------------------------------+-------------------------------------------------------------------------------+
@@ -51,6 +53,8 @@ Request Method
 --------------
 
 HTTP method: the type of requested operation.
+
+.. _apig-en-api-180328002__table26515221161:
 
 .. table:: **Table 2** HTTP methods supported
 
@@ -77,9 +81,10 @@ HTTP method: the type of requested operation.
 Request Headers
 ---------------
 
-Optional header fields: For example, such fields could be those required by a specified URI and HTTP method. `Table
-3 <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328002.html#apig-en-api-180328002__t24b12299374a4f4ba9fbf5880aec2658>`__ describes common HTTP
-request header fields.
+Optional header fields: For example, such fields could be those required by a specified URI and HTTP method. :ref:`Table 3 <apig-en-api-180328002__t24b12299374a4f4ba9fbf5880aec2658>`
+describes common HTTP request header fields.
+
+.. _apig-en-api-180328002__t24b12299374a4f4ba9fbf5880aec2658:
 
 .. table:: **Table 3** Common request headers
 
@@ -116,9 +121,10 @@ A response header consists of an HTTP status code and additional response header
 -  HTTP status code: A status code consists of three digits (2xx to 5xx). 2xx indicates a success response. 4xx and 5xx indicate an error response. The status
    code returned can also be defined by the service.
 
--  Optional header fields: For example, **Content-type** could be one of such fields. `Table
-   4 <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328002.html#apig-en-api-180328002__tb5107e70c1d545de8b97ed913f602b83>`__ describes common
-   response header fields.
+-  Optional header fields: For example, **Content-type** could be one of such fields. :ref:`Table 4 <apig-en-api-180328002__tb5107e70c1d545de8b97ed913f602b83>` 
+   describes common response header fields.
+
+.. _apig-en-api-180328002__tb5107e70c1d545de8b97ed913f602b83:
 
 .. table:: **Table 4** Response headers
 
