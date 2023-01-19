@@ -93,7 +93,7 @@ describes common HTTP request header fields.
    +=======================================+=======================================+=======================================+=======================================+
    | Content-Type                          | Type (or format) of the message body. | Mandatory                             | application/json                      |
    +---------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------+
-   | X-Auth-Token                          | Token authentication information,     | Mandatory if token authentication is  | -                                     |
+   | X-Auth-Token                          | Token authentication information,     | Mandatory if token authentication is  | ``-``                                 |
    |                                       | which can be obtained by following    | used.                                 |                                       |
    |                                       | the procedure in :ref:`Token          |                                       |                                       |
    |                                       | Authentication                        |                                       |                                       |
@@ -102,7 +102,7 @@ describes common HTTP request header fields.
    | X-Sdk-Date                            | Time at which the request was sent.   | Mandatory if AK/SK authentication is  | 20151222T034042Z                      |
    |                                       |                                       | used.                                 |                                       |
    +---------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------+
-   | Authorization                         | Signature authentication information, | Mandatory if AK/SK authentication is  | -                                     |
+   | Authorization                         | Signature authentication information, | Mandatory if AK/SK authentication is  | ``-``                                 |
    |                                       | which comes from the request          | used.                                 |                                       |
    |                                       | signature result.                     |                                       |                                       |
    +---------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------+

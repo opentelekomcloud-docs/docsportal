@@ -16,7 +16,7 @@ Required Information
    | Service name                                       | serviceName                                        | Service name, for example, **iam**, **vpc**, and   |
    |                                                    |                                                    | **ecs**.                                           |
    +----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
-   | Region/Endpoint                                    | -                                                  | Region and endpoint.                               |
+   | Region/Endpoint                                    | ``-``                                              | Region and endpoint.                               |
    |                                                    |                                                    |                                                    |
    |                                                    |                                                    | See `Regions and                                   |
    |                                                    |                                                    | Endpoints <https://docs.otc.t-systems.com/en-us/en |
@@ -45,7 +45,7 @@ Required Information
    |                                                    |                                                    | Obtain the URI according to the API reference      |
    |                                                    |                                                    | guide of each service.                             |
    +----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
-   | Domain Name                                        | -                                                  | Account name, which is used to obtain a token in   |
+   | Domain Name                                        | ``-``                                              | Account name, which is used to obtain a token in   |
    |                                                    |                                                    | token authentication mode.                         |
    |                                                    |                                                    |                                                    |
    |                                                    |                                                    | For details about how to obtain the value of this  |

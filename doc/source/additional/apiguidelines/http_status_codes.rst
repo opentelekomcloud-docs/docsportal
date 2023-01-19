@@ -1,7 +1,9 @@
 HTTP Status Codes
 =================
 
-`Table 1 <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328012.html#apig-en-api-180328012__table11812530035>`__ describes common status codes.
+:ref:`Table 1 <apig-en-api-180328012__table11812530035>` describes common status codes.
+
+.. _apig-en-api-180328012__table11812530035:
 
 .. table:: **Table 1** User management permissions
 
