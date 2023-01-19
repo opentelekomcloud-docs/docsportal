@@ -136,6 +136,7 @@ def container_item_html(self, node):
 
 
 def navigator_html(self, node):
+
     # This method renders containers of service groups with links to the
     # document of the specified type
     data = f'<div class="{node["class"]} row row-cols-1 row-cols-md-3 g-4">'
