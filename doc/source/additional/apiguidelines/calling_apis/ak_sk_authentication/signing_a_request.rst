@@ -1,6 +1,8 @@
 Signing a Request
 =================
 
+.. _apig-en-api-180328006__li17137133433914:
+
 1. Introduce the API Gateway signing SDK in the project.
 
    a. Download the API Gateway signing tool from the following link:
@@ -20,10 +22,10 @@ Signing a Request
 ..
 
    The signing method is integrated into the **.jar** file added in
-   `1 <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328006.html#apig-en-api-180328006__li17137133433914>`__. Before sending the request, sign
+   :ref:`1 <apig-en-api-180328006__li17137133433914>`. Before sending the request, sign
    the requested content. The signature obtained is included in the HTTP header of the request.
 
-   For details, see `Sample Code <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328008.html>`__.
+   For details, see :ref:`Sample Code <apig-en-api-180328008>`.
 
    .. important::
 

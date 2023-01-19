@@ -1,3 +1,5 @@
+.. _apig-en-api-180328008:
+
 Sample Code
 ===========
 
@@ -54,8 +56,8 @@ Procedure
 
    Replace the parameters in the URL, for example, **project_id**.
 
-   For details on how to obtain your region name, service name, AK/SK, project ID, and domain ID, see `Obtaining Required
-   Information <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328009.html>`__.
+   For details on how to obtain your region name, service name, AK/SK, project ID, and domain ID, see :ref:`Obtaining Required
+   Information <apig-en-api-180328009>`.
 
    .. code-block:: java
 
@@ -108,6 +110,8 @@ Procedure
          String url = "https://vpc.eu-de.otc.t-systems.com/v1/{project_id}/vpcs/{vpc_id}";
          get(ak, sk, url);
 
+   .. _apig-en-api-180328008__li11427145613263:
+
    b. Locate the following lines in the **AccessServiceImpl.java** file, delete "//" to activate the code line, and replace the sub-project ID with the actual one.
 
       .. code-block:: java
@@ -115,7 +119,7 @@ Procedure
          //TODO: Add special headers.
          //request.addHeader("X-Project-Id", "xxxxx");
 
-   c. Repeat `4.b <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328008.html#apig-en-api-180328008__li11427145613263>`__ to add other
+   c. Repeat :ref:`4.b <apig-en-api-180328008__li11427145613263>` to add other
    self-defined headers.
 
 5. Compile and run the API calling code.

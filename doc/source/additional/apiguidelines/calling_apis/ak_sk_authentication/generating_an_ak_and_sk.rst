@@ -1,3 +1,5 @@
+.. _apig-en-api-180328005:
+
 Generating an AK and SK
 =======================
 

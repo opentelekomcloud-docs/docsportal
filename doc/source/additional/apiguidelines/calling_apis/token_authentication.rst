@@ -1,3 +1,5 @@
+.. _apig-en-api-180328003:
+
 Token Authentication
 ====================
 
@@ -52,6 +54,8 @@ Procedure
         }
       }
 
+.. _apig-en-api-180328003__li2615608112249:
+
 2.  Obtain the token. For details, see section "Obtaining the User Token" in the *Identity and Access Management API Reference*. If the request is successful, the
 value of the X-Subject-Token header in the response is the token.
 
@@ -68,4 +72,4 @@ value of the X-Subject-Token header in the response is the token.
       **Figure 2** Obtain **X-Subject-Token** from the header of the response message.
 
 3.  Call a service API, add the **X-Auth-Token** header with the token obtained in
-`2 <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328003.html#apig-en-api-180328003__li2615608112249>`__.
+:ref:`2 <apig-en-api-180328003__li2615608112249>`.

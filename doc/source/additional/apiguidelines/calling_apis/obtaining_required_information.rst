@@ -1,3 +1,5 @@
+.. _apig-en-api-180328009:
+
 Obtaining Required Information
 ==============================
 
@@ -24,10 +26,8 @@ Required Information
    |                                                    |                                                    | cases.                                             |
    |                                                    |                                                    |                                                    |
    |                                                    |                                                    | For details about how to obtain the value of this  |
-   |                                                    |                                                    | parameter, see `Obtaining a Project                |
-   |                                                    |                                                    | ID <https://docs.otc.t-systems.com/en-us/api/apiug |
-   |                                                    |                                                    | /apig-en-api-180328009.html#apig-en-api-180328009_ |
-   |                                                    |                                                    | _section8415105514222>`__.                         |
+   |                                                    |                                                    | parameter, see :ref:`Obtaining a Project ID        |
+   |                                                    |                                                    | <apig-en-api-180328009__section8415105514222>`.    |
    +----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
    | username/password                                  | username/password                                  | Username and password, which are used to obtain a  |
    |                                                    |                                                    | token in token authentication mode.                |
@@ -37,9 +37,8 @@ Required Information
    |                                                    |                                                    | It is used in AK/SK authentication mode.           |
    |                                                    |                                                    |                                                    |
    |                                                    |                                                    | For details about how to obtain the value of this  |
-   |                                                    |                                                    | parameter, see `Generating an AK and               |
-   |                                                    |                                                    | SK <https://docs.otc.t-systems.com/en-us/api/apiug |
-   |                                                    |                                                    | /apig-en-api-180328005.html>`__.                   |
+   |                                                    |                                                    | parameter, see :ref:`Generating an AK and          |
+   |                                                    |                                                    | SK <apig-en-api-180328005>`.                       |
    +----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
    | uri                                                | uri                                                | Request path and parameters.                       |
    |                                                    |                                                    |                                                    |
@@ -50,11 +49,9 @@ Required Information
    |                                                    |                                                    | token authentication mode.                         |
    |                                                    |                                                    |                                                    |
    |                                                    |                                                    | For details about how to obtain the value of this  |
-   |                                                    |                                                    | parameter, see `Obtaining the Domain Name and      |
-   |                                                    |                                                    | Domain                                             |
-   |                                                    |                                                    | ID <https://docs.otc.t-systems.com/en-us/api/apiug |
-   |                                                    |                                                    | /apig-en-api-180328009.html#apig-en-api-180328009_ |
-   |                                                    |                                                    | _section208398123112>`__.                          |
+   |                                                    |                                                    | parameter, see :ref:`Obtaining the Domain Name and |
+   |                                                    |                                                    | Domain ID                                          |
+   |                                                    |                                                    | <apig-en-api-180328009__section208398123112>`.     |
    +----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
    | Domain ID                                          | X-Domain-Id                                        | Account ID, which is used to:                      |
    |                                                    |                                                    |                                                    |
@@ -65,21 +62,19 @@ Required Information
    |                                                    |                                                    |    specify a domain ID in the header.              |
    |                                                    |                                                    |                                                    |
    |                                                    |                                                    | For details about how to obtain the value of this  |
-   |                                                    |                                                    | parameter, see `Obtaining the Domain Name and      |
-   |                                                    |                                                    | Domain                                             |
-   |                                                    |                                                    | ID <https://docs.otc.t-systems.com/en-us/api/apiug |
-   |                                                    |                                                    | /apig-en-api-180328009.html#apig-en-api-180328009_ |
-   |                                                    |                                                    | _section208398123112>`__.                          |
+   |                                                    |                                                    | parameter, see :ref:`Obtaining the Domain Name and |
+   |                                                    |                                                    | Domain ID                                          |
+   |                                                    |                                                    | <apig-en-api-180328009__section208398123112>`.     |
    +----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
    | Sub-project ID                                     | X-Project-Id                                       | Sub-project ID, which is used in multi-project     |
    |                                                    |                                                    | scenarios.                                         |
    |                                                    |                                                    |                                                    |
    |                                                    |                                                    | For details about how to obtain the value of this  |
-   |                                                    |                                                    | parameter, see `Obtaining a Project                |
-   |                                                    |                                                    | ID <https://docs.otc.t-systems.com/en-us/api/apiug |
-   |                                                    |                                                    | /apig-en-api-180328009.html#apig-en-api-180328009_ |
-   |                                                    |                                                    | _section8415105514222>`__.                         |
+   |                                                    |                                                    | parameter, see :ref:`Obtaining a Project ID        |
+   |                                                    |                                                    | <apig-en-api-180328009__section8415105514222>`.    |
    +----------------------------------------------------+----------------------------------------------------+----------------------------------------------------+
+
+.. _apig-en-api-180328009__section8415105514222:
 
 Obtaining a Project ID
 ----------------------
@@ -101,6 +96,8 @@ how to obtain a project ID:
       **Figure 1** Viewing project IDs
 
    In multi-project scenarios, expand the region, and obtain your sub-project ID from the **Project ID** column.
+
+.. _apig-en-api-180328009__section208398123112:
 
 Obtaining the Domain Name and Domain ID
 ---------------------------------------

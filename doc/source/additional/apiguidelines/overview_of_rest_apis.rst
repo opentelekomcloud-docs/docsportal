@@ -95,10 +95,9 @@ describes common HTTP request header fields.
    +---------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------+
    | X-Auth-Token                          | Token authentication information,     | Mandatory if token authentication is  | -                                     |
    |                                       | which can be obtained by following    | used.                                 |                                       |
-   |                                       | the procedure in `Token               |                                       |                                       |
-   |                                       | Authentication <https://docs.otc.t-sy |                                       |                                       |
-   |                                       | stems.com/en-us/api/apiug/apig-en-api |                                       |                                       |
-   |                                       | -180328003.html>`__.                  |                                       |                                       |
+   |                                       | the procedure in :ref:`Token          |                                       |                                       |
+   |                                       | Authentication                        |                                       |                                       |
+   |                                       | <apig-en-api-180328003>`.             |                                       |                                       |
    +---------------------------------------+---------------------------------------+---------------------------------------+---------------------------------------+
    | X-Sdk-Date                            | Time at which the request was sent.   | Mandatory if AK/SK authentication is  | 20151222T034042Z                      |
    |                                       |                                       | used.                                 |                                       |
