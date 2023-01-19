@@ -29,11 +29,14 @@ The AK/SK authentication process is as follows:
    `3 <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328004.html#apig-en-api-180328004__li198402221915>`__. If they are consistent, the request
    is processed; otherwise, the request is rejected.
 
-`Figure 1 <https://docs.otc.t-systems.com/en-us/api/apiug/apig-en-api-180328004.html#apig-en-api-180328004__fig104904517537>`__ shows the process of calling
-APIs through AK/SK authentication.
+:ref:`Figure 1 <apig-en-api-180328004__fig104904517537>` shows the process of calling APIs through AK/SK authentication.
 
-| **Figure 1** API calling process flow
-| |https://docs.otc.t-systems.com/en-us/api/apiug/en-us_image_0161965716.png|
+.. _apig-en-api-180328004__fig104904517537:
+
+.. figure:: /_static/images/api_calling_process_flow.png
+   :alt: **Figure 1** API calling process flow
+
+   **Figure 1** API calling process flow
 
 .. note::
 
@@ -46,4 +49,3 @@ APIs through AK/SK authentication.
    generating_an_ak_and_sk
    signing_a_request
    sample_code
-
