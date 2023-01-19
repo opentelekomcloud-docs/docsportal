@@ -3,9 +3,10 @@ Additional Resources
 
 .. toctree::
 
+   apiguidelines/index
+   endpoints
    glossary
    permissions
-   endpoints
    Console <https://console.otc.t-systems.com>
    Health Dashboard <https://status.otc-service.com>
    Health Dashboard Manual <https://docs.otc.t-systems.com/status-dashboard/umn/_static/OTC_Status_Dashboard_User_Guide.pdf>
