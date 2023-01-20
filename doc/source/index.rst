@@ -10,5 +10,5 @@ Open Telekom Cloud Service Documentation
    :hidden:
 
    services
-   developer
+   developer/index
    additional/index
