@@ -6,6 +6,7 @@ Developer
    :maxdepth: 2
 
    api
+   api_guidelines/index
    sdk
    iac
    drivers
