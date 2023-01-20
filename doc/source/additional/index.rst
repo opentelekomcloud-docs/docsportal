@@ -4,7 +4,6 @@ Additional Resources
 .. toctree::
    :maxdepth: 1
 
-   apiguidelines/index
    endpoints
    glossary
    permissions
