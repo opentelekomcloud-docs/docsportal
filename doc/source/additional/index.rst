@@ -2,7 +2,7 @@ Additional Resources
 ====================
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 0
 
    endpoints
    glossary
