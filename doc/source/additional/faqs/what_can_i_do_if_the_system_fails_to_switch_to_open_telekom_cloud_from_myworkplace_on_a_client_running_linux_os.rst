@@ -67,7 +67,7 @@ Perform the following procedure to reduce the MTU value of the NIC:
 
    .. note::
 
-      *XXX* indicates the NIC bound to the client host IP address queried in :ref:`2 <#EN-US_TOPIC_0027928402__li2833310617613>`, such as **eth0**.
+      *XXX* indicates the NIC bound to the client host IP address queried in :ref:`2 <EN-US_TOPIC_0027928402__li2833310617613>`, such as **eth0**.
 
    4. Press **i** and run the following command to configure the MTU value of the NIC:
 
