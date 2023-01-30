@@ -16,15 +16,15 @@ If the existing resource quota cannot meet your service requirements, you can ap
 
 3. In the upper right corner of the page, click |image2|.
 
-..
+   ..
 
-   The **Service Quota** page is displayed.
+      The **Service Quota** page is displayed.
 
 4. View the used and total quota of each type of resources on the displayed page.
 
-..
+   ..
 
-   If a quota cannot meet service requirements, click **Increase Quota** to adjust it.
+      If a quota cannot meet service requirements, click **Increase Quota** to adjust it.
 
 **How Do I Apply for a Higher Quota?**
 
@@ -35,10 +35,10 @@ You need to prepare the following information before dialing the hotline number 
 
 -  Domain name, project name, and project ID, which can be obtained by performing the following operations:
 
-..
+   ..
 
-   Log in to the management console using the cloud account, click the username in the upper right corner, select **My Credential** from the drop-down list, and
-   obtain the domain name, project name, and project ID on the **My Credential** page.
+      Log in to the management console using the cloud account, click the username in the upper right corner, select **My Credential** from the drop-down list, and
+      obtain the domain name, project name, and project ID on the **My Credential** page.
 
 -  Quota information, which includes:
 
