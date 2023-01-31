@@ -47,3 +47,12 @@
 .navigator-container .card li {
   padding: 0.2rem 1rem;
 }
+
+/* A "nice" workaround to let us keep l2 level permanently open
+ * but hide child ul's not underneath current selection.
+ * The only eventually open issue is that this way the whole child tree is 
+ * open including all subtrees.
+ */
+.docs-sidebar-toc li.toctree-l2:not(.current) > ul {
+    display: none;
+}
