@@ -2,4 +2,4 @@ Virtual Private Network
 =======================
 
 .. service_docs::
-   :service_type: vpcep
+   :service_type: vpn
