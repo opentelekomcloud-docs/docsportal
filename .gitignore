@@ -7,6 +7,7 @@ _build/
 *.pyc
 doc/build
 doc/source/BBresult
+doc/source/internal
 api-ref/build
 .tox
 /.venv
