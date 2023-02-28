@@ -234,72 +234,11 @@ def service_docs_html(self, node):
     # This method renders containers per each service of the category with all
     # links as individual list items
     data = '<div class="row row-cols-1 row-cols-md-3 g-4">'
-    service = {
-        'service': {
-            'repositories': [{
-                    'repo': 'docs/elastic-cloud-server',
-                    'type': 'gitea',
-                    'environment': 'internal',
-                    'teams': [{
-                            'name': 'docs-compute-ro',
-                            'permission': 'read'
-                        }, {
-                            'name': 'docs-compute-rw',
-                            'permission': 'write'
-                        }
-                    ],
-                    'assignees': ['docs-compute-ro']
-                }, {
-                    'repo': 'opentelekomcloud-docs/elastic-cloud-server',
-                    'type': 'github',
-                    'environment': 'public'
-                }
-            ],
-            'service_category': 'compute',
-            'service_title': 'Elastic Cloud Server',
-            'service_type': 'ecs',
-            'teams': [{
-                    'name': 'docs-compute-rw',
-                    'permission': 'write'
-                }
-            ]
-        },
-        'documents': [{
-                'hc_location': 'api/ecs',
-                'html_location': 'docs/ecs/api-ref',
-                'link': '/elastic-cloud-server/api-ref/',
-                'pdf_name': 'ecs-api-ref',
-                'rst_location': 'api-ref/source',
-                'service_type': 'ecs',
-                'title': 'API Reference',
-                'type': 'api-ref'
-            }, {
-                'hc_location': 'devg/ecs',
-                'html_location': 'docs/ecs/dev',
-                'link': '/elastic-cloud-server/dev-guide/',
-                'pdf_name': 'ecs-dev-guide',
-                'rst_location': 'dev_guide/source',
-                'service_type': 'ecs',
-                'title': 'Developer Guide',
-                'type': 'dev'
-            }, {
-                'hc_location': 'usermanual/ecs',
-                'html_location': 'docs/ecs/umn',
-                'link': '/elastic-cloud-server/umn/',
-                'pdf_name': 'ecs-umn',
-                'rst_location': 'umn/source',
-                'service_type': 'ecs',
-                'title': 'User Guide',
-                'type': 'umn'
-            }
-        ]
-    }
-
-    # Documents
+    service = METADATA.get_service_with_docs_by_service_type(node['service_type'])
     data += (
         f'<div class="col"><div class="card">'
         f'<div class="card-body"><h5 class="card-title">'
-        f'Documentation</h5></div>'
+        f'Documents</h5></div>'
         f'<ul class="list-group list-group-flush">'
     )
 
@@ -316,67 +255,8 @@ def service_docs_html(self, node):
         )
     data += '</ul></div></div>'
     data += '</div>'
-
-    # for k, v in METADATA.services_with_docs_by_category(
-    #         node['service_category'], environment=node['environment']).items():
-    #     if not v.get("docs"):
-    #         continue
-    #     title = v["service_title"]
-    #     data += (
-    #         f'<div class="col"><div class="card">'
-    #         f'<div class="card-body"><h5 class="card-title">'
-    #         f'{title}</h5></div>'
-    #         f'<ul class="list-group list-group-flush">'
-    #     )
-    #     for doc in v.get("docs", []):
-    #         if not "link" in doc:
-    #             continue
-    #         title = doc["title"]
-    #         link = doc.get("link")
-    #         data += (
-    #             f'<li class="list-group-item"><a href="{link}">'
-    #             f'<div class="row">'
-    #             f'<div class="col-md-10 col-sm-10 col-xs-10">{title}</div>'
-    #             f'</div></a></li>'
-    #         )
-    #     # Row end
-    #     data += '</ul></div></div>'
-    # data += '</div>'
-
     self.body.append(data)
     raise nodes.SkipNode
-
-    # service = METADATA.service_with_docs_by_service_type(node['service_type']).items()
-
-    # for k, v in METADATA.services_with_docs_by_category(
-    #         node['service_category'], environment=node['environment']).items():
-    #     if not v.get("docs"):
-    #         continue
-    #     title = v["service_title"]
-    #     data += (
-    #         f'<div class="col"><div class="card">'
-    #         f'<div class="card-body"><h5 class="card-title">'
-    #         f'{title}</h5></div>'
-    #         f'<ul class="list-group list-group-flush">'
-    #     )
-    #     for doc in v.get("docs", []):
-    #         if not "link" in doc:
-    #             continue
-    #         title = doc["title"]
-    #         link = doc.get("link")
-    #         data += (
-    #             f'<li class="list-group-item"><a href="{link}">'
-    #             f'<div class="row">'
-    #             f'<div class="col-md-10 col-sm-10 col-xs-10">{title}</div>'
-    #             f'</div></a></li>'
-    #         )
-    #     # Row end
-    #     data += '</ul></div></div>'
-    # data += '</div>'
-
-    # self.body.append(data)
-    # raise nodes.SkipNode
-
 
 def setup(app):
     app.add_node(container_item,

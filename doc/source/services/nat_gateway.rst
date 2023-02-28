@@ -2,4 +2,4 @@ NAT Gateway
 ===========
 
 .. service_docs::
-   :service_type: nat
+   :service_type: natgw
