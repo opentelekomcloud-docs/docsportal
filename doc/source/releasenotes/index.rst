@@ -1,5 +1,5 @@
 =============
-Release notes
+Release Notes
 =============
 
 - `Open Telekom Cloud <https://open-telekom-cloud.com/de/support/release-notes>`_
