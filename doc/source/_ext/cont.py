@@ -139,13 +139,13 @@ def navigator_html(self, node):
 
     # This method renders containers of service groups with links to the
     # document of the specified type
-    data = f'<div class="{node["class"]} row row-cols-1 row-cols-md-3 g-4">'
+    data = f'<div class="{node["class"]} container-docsportal">'
 
     for cat in METADATA.service_categories:
         category = cat["name"]
         category_title = cat["title"]
         data += (
-            f'<div class="col"><div class="card">'
+            f'<div class="card item-docsportal">'
             f'<div class="card-body">'
             f'<h5 class="card-title">{category_title}</h5></div>'
             f'<ul class="list-group list-group-flush">'
@@ -171,7 +171,7 @@ def navigator_html(self, node):
                     f'</div></a></li>'
                 )
 
-        data += '</ul></div></div>'
+        data += '</ul></div>'
 
     data += '</div>'
 
