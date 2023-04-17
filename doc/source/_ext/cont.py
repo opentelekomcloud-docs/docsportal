@@ -171,7 +171,7 @@ def navigator_html(self, node):
                     f'</div></a></li>'
                 )
 
-        data += '</ul></div></div>'
+        data += '</ul></div>'
 
     data += '</div>'
 
@@ -206,7 +206,7 @@ def service_group_html(self, node):
                 f'</div></a></li>'
             )
         # Row end
-        data += '</ul></div></div>'
+        data += '</ul></div>'
     data += '</div>'
 
     self.body.append(data)
