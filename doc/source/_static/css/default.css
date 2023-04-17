@@ -56,3 +56,41 @@
 .docs-sidebar-toc li.toctree-l2:not(.current) > ul {
     display: none;
 }
+
+/* Card Design */
+
+.container-docsportal {
+  display: flex;
+  align-items: stretch;
+  align-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2em;
+  gap: 1em; /* needs to be substracted from item size */
+}
+
+@media (min-width: 768px) {
+  .item-docsportal {
+    flex-basis: calc(33.333% - 1em); /* needs gap in container-docsportal */
+    box-sizing: border-box;
+    align-self: stretch;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .item-docsportal {
+    flex-basis: calc(100% - 1em); /* needs gap in container-docsportal */
+    box-sizing: border-box;
+    align-self: stretch;
+  }
+}
+
+.item-docsportal>.list-group:last-child {
+  margin-bottom: 1em;
+}
+
+.item-docsportal>.card-body {
+  flex: none;
+}
+
+/* End Card-Design */
