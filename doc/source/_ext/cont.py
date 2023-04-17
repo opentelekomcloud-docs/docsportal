@@ -136,16 +136,15 @@ def container_item_html(self, node):
 
 
 def navigator_html(self, node):
-
     # This method renders containers of service groups with links to the
     # document of the specified type
-    data = f'<div class="{node["class"]} row row-cols-1 row-cols-md-3 g-4">'
+    data = f'<div class="{node["class"]} container-docsportal">'
 
     for cat in METADATA.service_categories:
         category = cat["name"]
         category_title = cat["title"]
         data += (
-            f'<div class="col"><div class="card">'
+            f'<div class="card item-docsportal">'
             f'<div class="card-body">'
             f'<h5 class="card-title">{category_title}</h5></div>'
             f'<ul class="list-group list-group-flush">'
@@ -182,14 +181,14 @@ def navigator_html(self, node):
 def service_group_html(self, node):
     # This method renders containers per each service of the category with all
     # links as individual list items
-    data = '<div class="row row-cols-1 row-cols-md-3 g-4">'
+    data = '<div class="container-docsportal">'
     for k, v in METADATA.services_with_docs_by_category(
             node['service_category'], environment=node['environment']).items():
         if not v.get("docs"):
             continue
         title = v["service_title"]
         data += (
-            f'<div class="col"><div class="card">'
+            f'<div class="card item-docsportal">'
             f'<div class="card-body"><h5 class="card-title">'
             f'{title}</h5></div>'
             f'<ul class="list-group list-group-flush">'
