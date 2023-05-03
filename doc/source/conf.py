@@ -15,7 +15,7 @@ sys.path.append(os.path.abspath("./_ext"))
 extensions = [
     'sphinx.ext.intersphinx',
     'otcdocstheme',
-    'cont'
+    'otc_sphinx_directives'
 ]
 
 smartquotes = False
