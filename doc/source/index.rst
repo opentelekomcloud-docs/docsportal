@@ -2,9 +2,8 @@
 Open Telekom Cloud Service Documentation
 ========================================
 
-.. navigator::
+.. service_navigator::
    :class: navigator-container
-   :document_type: umn
 
 .. toctree::
    :hidden:
