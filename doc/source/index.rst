@@ -12,3 +12,4 @@ Open Telekom Cloud Service Documentation
    developer/index
    additional/index
    releasenotes/index
+   dashboard/index
