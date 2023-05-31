@@ -1,25 +1,19 @@
 HelpCenter 3 Dashboard powered by Grafana
 =========================================
 
-The [Helpcenter](docs.otc-service.com) is the central repository for
-all user and customer related documentation of the [Open Telekom
-Cloud](open-telekom-cloud.com). It is based on a set of GitOps
-processes, that makes writing, reviewing, releasing, and updating
-documentation transparent. Core components of the Helpcenter are Git
-repositories, a rendering engine that transforms restructured text
-into several formats including HTML and PDF, a powerful serach engine,
-and a webserver delivering the content to the users.
+The `Helpcenter<https://docs.otc-service.com/>` is the central
+repository for all user and customer related documentation of the
+`Open Telekom Cloud<https://open-telekom-cloud.com>`. It is based on a
+set of GitOps processes, that makes writing, reviewing, releasing, and
+updating documentation transparent. Core components of the Helpcenter
+are Git repositories, a rendering engine that transforms restructured
+text into several formats including HTML and PDF, a powerful serach
+engine, and a webserver delivering the content to the users.
 
 To maintain a continous overview of the documents, their status,
 pending changes, or reported issues, a comprehensive status dashboard
 has been introduce, leveraging Grafana for improved visibilityof the
 associated processes. This is this dashboard's documentation.
-
-The dashboard system consists of four components: Python scripts
-extract data automatically from the repositories and other sources,
-and store it in a PostgreSQL database. Grafana provides interactive
-and intuitive data visualization, and Zulip alerts users with timely
-notifications.
 
 This comprehensive mechanism continously tracks and evaluates the
 progress of the documentation process from the pre-production stage in
@@ -41,25 +35,27 @@ steps:
 .. figure:: prs_overview.png
    :align: center
 
-All the steps provided are executed in the OTC environment.
+The components for all steps are hosted in the Open Telekom Cloud
+environment. The dashboard is a web based application at
+
+    https://dashboard.helpcenter.otc-service.com/
+
 
 Dashboards and Panels: What They Are and What They're For
 ---------------------------------------------------------
 
-A dashboard is a tool that provides a visual display of important
-information or data at a glance. It aggregates and presents key
-insights derived from multiple data sources into a cohesive and easily
-digestible format. Dashboards are widely used in many fields such as
-business, IT, and data analytics for monitoring, reporting, and
-decision-making purposes. For Helpcenter three dashboards have been
-created:
+The dashboard provides a visual display of important information or
+data at a glance. It aggregates and presents key insights derived from
+multiple data sources into a cohesive and easily digestible
+format. For the Helpcenter three dashboards are available:
 
-* **Open PRs Dashboard:** This dashboard primarily focuses on
-  monitoring open Pull Requests (PRs) in the pre-production (Gitea)
-  stage, as well as orphaned PRs, which might appear during the
-  rollout from Gitea to GitHub. It provides an overview of the PR's
-  status, helping to identify bottlenecks and ensuring the smooth
-  progression of documentation workflows.
+* **Open PRs Dashboard:** This dashboard focuses on monitoring open
+  Pull Requests (PRs) in the pre-production (Gitea) stage, as well as
+  orphaned PRs. Orphaned PRs occur when XXXXX during the transfer of
+  an PR from the preprod to the prod repository. The dashboard
+  provides an overview of the PR's status, helping to identify
+  bottlenecks and ensuring the smooth progression of documentation
+  workflows.
 
 * **Open Issues Dashboard:** This dashboard is specifically designed
   to track and manage open issues across different services and
@@ -72,6 +68,7 @@ created:
   time passed since the last change for a service. Monitoring the
   update frequency aids ensuring the relevancy and timeliness of the
   documents.
+
 
 Open PRs Dashboard
 ~~~~~~~~~~~~~~~~~~
@@ -128,6 +125,7 @@ The **Open PRs Dashboard** consists of the following panels:
   associated with that service. Just like the *Open PRs by Squads
   panel,* this one also consistently displays data for all squads
   regardless of filter settings.
+
 
 Open Issues Dashboard
 ~~~~~~~~~~~~~~~~~~~~~
@@ -199,6 +197,7 @@ panels:
   by Squads. Likewise panel *Open Issues by Services*, this panel
   doesn't depend on the *Squad* drop-down list and always shows data
   for all squads.
+
 
 Last Docs Release Dashboard
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
