@@ -139,10 +139,12 @@ In the upper left corner you can see drop-down lists: *Squad*,
 
 * **Squad:** represents distinct "Squads" for the *Open Issues
   Dashboard*. Supports multiple selections including an "All" option.
+
 .. image:: open_issues_squad.png
 
 * **Environment:** represents distinct "Environments" for *Open Issues
   Dashboard*. Supports multiple selections and an "All" option.
+
 .. image:: open_issues_environment.png
 
 * **Duration:** variable with two pre-defined options: "ASC" and
