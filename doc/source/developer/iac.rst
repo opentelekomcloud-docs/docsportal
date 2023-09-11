@@ -7,7 +7,7 @@ Infrastructure As a Code
       :title: Ansible
       :image: _static/images/ansible.svg
 
-      - Ansible Collection|https://docs.otc-service.com/ansible-collection-cloud
+      - Ansible Collection|https://docs.otc.t-systems.com/ansible-collection-cloud/
 
    .. container_item::
       :title: Terraform
