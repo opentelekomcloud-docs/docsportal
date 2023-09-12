@@ -11,4 +11,4 @@ Open Telekom Cloud Service Documentation
    services
    developer/index
    additional/index
-   releasenotes/index
+   releasenotes
