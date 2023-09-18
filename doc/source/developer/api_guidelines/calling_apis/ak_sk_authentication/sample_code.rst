@@ -16,8 +16,6 @@ The following code shows how to sign a request and how to use an HTTP client to 
 
 -  **AccessServiceImpl**: implementation of the access method. The code required for API Gateway communication is included in the access method.
 
-You can download the sample code package from https://apig-demo.obsEndpoint/java/SdkDemo.zip.
-
 You can download the sample code package from https://apig-demo.obs.eu-de.otc.t-systems.com/java/SdkDemo.zip.
 
 .. important::
