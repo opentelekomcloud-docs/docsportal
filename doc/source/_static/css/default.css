@@ -9,9 +9,7 @@
 .card a {
   text-decoration: none;
 }
-.card li:hover {
-  background: lightgray;
-}
+
 .card-title {
   font-weight: unset;
 }
@@ -94,3 +92,34 @@
 }
 
 /* End Card-Design */
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+  .icon-svg {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(298deg) brightness(106%) contrast(106%);
+  }
+
+  .card {
+    box-shadow: none;
+    transition: transform .2s;
+  }
+
+  .card:hover {
+    box-shadow: 0px 2px 15px 1px rgba(255,255,255,0.2);
+  }
+}
+
+
+.item-docsportal {
+  background-color: var(--telekom-color-background-surface);
+}
+
+.card li:hover {
+  background: var(--telekom-color-background-surface-subtle);
+}
+
+.list-group-item {
+  background-color: var(--telekom-color-background-surface);
+}
+
