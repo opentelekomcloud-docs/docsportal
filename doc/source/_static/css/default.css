@@ -123,3 +123,18 @@
   background-color: var(--telekom-color-background-surface);
 }
 
+.docs-sidebar.docsportal-sidebar {
+  width: 15%;
+  max-width: unset;
+  min-width: unset;
+  margin-right: 2rem;
+}
+
+.docsportal-container {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.docsportal-docsmain {
+  width: 80%;
+}
