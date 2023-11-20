@@ -9,9 +9,7 @@
 .card a {
   text-decoration: none;
 }
-.card li:hover {
-  background: lightgray;
-}
+
 .card-title {
   font-weight: unset;
 }
@@ -65,28 +63,35 @@
   align-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 2em;
-  gap: 1em; /* needs to be substracted from item size */
+  margin-top: 2rem;
+  gap: 1rem; /* needs to be substracted from item size */
+}
+
+@media (max-width: 768px) {
+  .container-docsportal {
+    row-gap: 1rem;
+    column-gap: 0;
+  }
 }
 
 @media (min-width: 768px) {
   .item-docsportal {
-    flex-basis: calc(33.333% - 1em); /* needs gap in container-docsportal */
+    flex-basis: calc(33.333% - 1rem); /* needs gap in container-docsportal */
     box-sizing: border-box;
     align-self: stretch;
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .item-docsportal {
-    flex-basis: calc(100% - 1em); /* needs gap in container-docsportal */
+    flex-basis: 100%;
     box-sizing: border-box;
     align-self: stretch;
   }
 }
 
 .item-docsportal>.list-group:last-child {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .item-docsportal>.card-body {
@@ -94,3 +99,41 @@
 }
 
 /* End Card-Design */
+
+/* Dark Mode */
+
+@media (prefers-color-scheme: dark) {
+  .icon-svg {
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(298deg) brightness(106%) contrast(106%);
+  }
+
+  .card {
+    box-shadow: none;
+    transition: transform .2s;
+  }
+
+  .card:hover {
+    box-shadow: 0px 2px 15px 1px rgba(255,255,255,0.2);
+  }
+}
+
+
+.item-docsportal {
+  background-color: var(--telekom-color-background-surface);
+}
+
+.card li:hover {
+  background: var(--telekom-color-background-surface-subtle);
+}
+
+.list-group-item {
+  background-color: var(--telekom-color-background-surface);
+}
+
+/* More stuff */
+
+.docsportal-main {
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
