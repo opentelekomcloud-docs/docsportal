@@ -13,15 +13,25 @@ import sys
 sys.path.append(os.path.abspath("./_ext"))
 
 extensions = [
-    'sphinx.ext.intersphinx',
     'otcdocstheme',
     'otc_sphinx_directives'
 ]
 
+# Those variables are needed for indexing into OpenSearch
+otcdocs_doc_environment = 'public'
+otcdocs_doc_link = ''
+otcdocs_doc_title = ''
+otcdocs_doc_type = ''
+otcdocs_service_category = ''
+otcdocs_service_title = 'HelpCenter'
+otcdocs_service_type = ''
+otcdocs_search_environment = 'hc_de'
+otcdocs_search_url = "https://opensearch.eco.tsi-dev.otc-service.com/"
+
 smartquotes = False
 
 # openstackdocstheme options
-otcdocs_repo_name = 'opentelekomcloud-infra/docsportal'
+otcdocs_repo_name = 'opentelekomcloud-docs/docsportal'
 
 # The suffix of source filenames.
 source_suffix = '.rst'
@@ -30,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-copyright = u'2017-2021, OpenTelekomCloud Contributors'
+copyright = u'2017-2023, OpenTelekomCloud Contributors'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -85,8 +95,3 @@ latex_documents = [
   ('index', 'os-doc-demo.tex', u'os-doc-demo Documentation',
    u'OpenTelekomCloud Contributors', 'manual'),
 ]
-
-# -- Intersphinx
-intersphinx_mapping = {
-    'security': ('https://docs-beta.otc.t-systems.com/security', None)
-}
