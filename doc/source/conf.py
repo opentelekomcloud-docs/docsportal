@@ -13,7 +13,6 @@ import sys
 sys.path.append(os.path.abspath("./_ext"))
 
 extensions = [
-    'sphinx.ext.intersphinx',
     'otcdocstheme',
     'otc_sphinx_directives'
 ]
@@ -85,8 +84,3 @@ latex_documents = [
   ('index', 'os-doc-demo.tex', u'os-doc-demo Documentation',
    u'OpenTelekomCloud Contributors', 'manual'),
 ]
-
-# -- Intersphinx
-intersphinx_mapping = {
-    'security': ('https://docs-beta.otc.t-systems.com/security', None)
-}
