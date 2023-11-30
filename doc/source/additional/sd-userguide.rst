@@ -1,8 +1,8 @@
-=========================================================================
-Open Telekom Cloud User Guide for the Open Telekom Cloud Status Dashboard
-=========================================================================
+======================================================
+User Guide for the Open Telekom Cloud Status Dashboard
+======================================================
 
-Welcome to the Open Telekom CLoud Status Dashboard – your go-to resource for monitoring the availability of various components in different regions. This guide is tailored for IT professionals to navigate and extract valuable insights from the Open Telekom Cloud platform.
+Welcome to the Open Telekom Cloud Status Dashboard – your go-to resource for monitoring the availability of various components in different regions. This guide is tailored for IT professionals to navigate and extract valuable insights from the Open Telekom Cloud platform.
 
 Accessing the Status Website
 ----------------------------
