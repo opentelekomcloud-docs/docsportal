@@ -1,8 +1,8 @@
 =========================================================================
-Open Telekom Cloud User Guide for the Open Telekom CLoud Status Dashboard
+Open Telekom Cloud User Guide for the Open Telekom Cloud Status Dashboard
 =========================================================================
 
-Welcome to the "MeineCloud" Status Website – your go-to resource for monitoring the availability of various components in different regions. This guide is tailored for IT professionals to navigate and extract valuable insights from the Open telekom Cloud platform.
+Welcome to the Open Telekom CLoud Status Dashboard – your go-to resource for monitoring the availability of various components in different regions. This guide is tailored for IT professionals to navigate and extract valuable insights from the Open Telekom Cloud platform.
 
 Accessing the Status Website
 ----------------------------
@@ -22,7 +22,7 @@ Services are categorized into sections such as Compute, Network, or Storage. Eac
 - **Green:** Service fully operational
 - **Yellow:** Service available but may have restrictions or slow response
 - **Red:** Service unresponsive or experiencing issues
-- **Blue with Wrench:** Planned downtime
+- **Blue with a wrench:** Planned downtime
 
 Incident Displays
 -----------------
