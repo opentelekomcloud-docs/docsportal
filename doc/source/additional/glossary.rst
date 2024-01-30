@@ -227,9 +227,9 @@ Glossary
      A DBMS service that ensures data integrity when multiple transactions are concurrently executed in a multi-user environment. In a multi-threaded DWS
      environment, concurrency control ensures that database operations are safe and all database transactions remain consistent at any given time.
 
-   config
-     config is a special mongod that stores metadata of a DB instance. config is deployed as a replica set. To create a DB instance or modify metadata of a DB
-     instance, config must be available.
+   Config(DDS)
+     A `config` is a special Document Database Service process that stores metadata of a DB instance. A `config` is deployed as a replica set. To create
+     a DB instance or to modify metadata of a DB instance, a `config` must be available.
 
    Container(MRS)
      Isolates CPU and memory resources on Java virtual machines (VMs).
@@ -855,10 +855,10 @@ Glossary
      building, and model deployment on the device, edge, and cloud, ModelArts helps AI developers build models quickly and manage the lifecycle of AI development.
 
    mongod
-     A major process in DDS. mongod mainly processes data requests and manages data access.
+     Name of a major daemon process in DDS, mainly processing data requests and managing data access.
 
    mongos
-     A router for data read and write, providing a unified interface for accessing DB instances.
+     Name of a sharding process in DDS, acting as a router for data read and write and providing a unified interface for accessing DB instances.
 
    MPP
      See :term:`massively parallel processing`
@@ -1198,7 +1198,7 @@ Glossary
      A copy in a shard used for storing indices. It can be understood as a replica shard.
 
    replica set
-     A replica set consists of a set of mongod processes and provides a collection of data nodes to ensure data redundancy and high availability (HA).
+     A replica set in the DDS consists of a set of :term:`mongod` processes and provides a collection of data nodes to ensure data redundancy and high availability (HA).
 
    Replication factor
      The number of copies of a file is called the replication factor of that file.
@@ -1290,7 +1290,7 @@ Glossary
      more replicas.
 
    shard (DDS)
-     In Document Database Service, each shard is a mongod process that stores a subset of data for a DB instance. All shards store all data for a DB instance.
+     In the DDS, each shard is represented by a :term:`mongod` process that stores a subset of data for a DB instance. All shards store all data for a DB instance.
      Generally, each shard is deployed as a replica set to ensure data redundancy and HA.
 
    shared-nothing architecture
