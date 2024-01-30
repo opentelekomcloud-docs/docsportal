@@ -227,9 +227,9 @@ Glossary
      A DBMS service that ensures data integrity when multiple transactions are concurrently executed in a multi-user environment. In a multi-threaded DWS
      environment, concurrency control ensures that database operations are safe and all database transactions remain consistent at any given time.
 
-   Config(DDS)
-     A `config` is a special Document Database Service process that stores metadata of a DB instance. A `config` is deployed as a replica set. To create
-     a DB instance or to modify metadata of a DB instance, a `config` must be available.
+   config(DDS)
+     A `config` instance is a special Document Database Service process that stores metadata of a DB instance. It is deployed as a replica set. To create
+     a DB instance or to modify metadata of a DB instance, the `config` instance must be available.
 
    Container(MRS)
      Isolates CPU and memory resources on Java virtual machines (VMs).
