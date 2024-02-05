@@ -13,16 +13,20 @@
   {%- block relbar1 %}{% endblock %}
 
   {%- block content %}
-      <div class="container-xxl my-md-4 docs-book-wrapper">
-	{% include 'sidebartoc.html' %}
-	<div id="content-row" class="row">
-        <main id="docs-main" class="docs-main col-12 col-xl-11" role="main">
-          <div id="docs-content" class="docs-content ps-lg-4">
-            {% block body %}{% endblock %}
+        <div class="scl-container docsportal-main">
+          <div class="scl-container-width">
+            <div id="flex-content" class="flex-content docsportal-flex-content">
+              {% include 'sidebartoc.html' %}
+              <div id="flex-main" class="flex-main">
+                <main id="docs-main" role="main">
+                  <div id="docs-content">
+                    {% block body %}{% endblock %}
+                  </div>
+                </main>
+              </div>
+            </div>
           </div>
-        </main>
-	</div>
-      </div>
+        </div>
   {%- endblock %}
 
   {%- block relbar2 %}{% endblock %}
