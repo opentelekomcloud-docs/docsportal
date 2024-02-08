@@ -13,4 +13,5 @@ Infrastructure As a Code
       :title: Terraform
       :image: _static/images/terraform.svg
 
-      - Open Telekom Cloud Provider|https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/latest/docs
+      - Open Telekom Cloud Docs|https://docs.otc.t-systems.com/terraform-provider-opentelekomcloud/
+      - Terraform Docs|https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/latest/docs
