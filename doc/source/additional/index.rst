@@ -5,7 +5,7 @@ Additional Resources
    :maxdepth: 1
 
    Regions and Endpoints </regions-and-endpoints/index>
-   glossary
+   Glossary </glossary/index>
    Status Dashboard <https://status.otc-service.com>
    Enterprise Dashboard <https://enterprise-dashboard.otc-service.com>
    Security advisory </security/index>
