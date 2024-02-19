@@ -5,7 +5,7 @@ Additional Resources
    :maxdepth: 1
 
    endpoints
-   glossary
+   Glossary </glossary/index>
    Status Dashboard <https://status.otc-service.com>
    Enterprise Dashboard <https://enterprise-dashboard.otc-service.com>
    Security advisory </security/index>
