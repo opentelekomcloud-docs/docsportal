@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   id="图层_1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 48 48"
+   style="enable-background:new 0 0 48 48;"
+   xml:space="preserve"
+   width="132px"
+   height="132px"
+   sodipodi:docname="cse.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs1" /><sodipodi:namedview
+   id="namedview1"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   inkscape:zoom="13.780303"
+   inkscape:cx="65.963716"
+   inkscape:cy="66"
+   inkscape:window-width="3840"
+   inkscape:window-height="2054"
+   inkscape:window-x="-11"
+   inkscape:window-y="-11"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="图层_1" />
+<path
+   d="M34.9,19.8c0.1,0.1,0.2,0.2,0.4,0.2h5.3c0.2,0,0.3-0.1,0.4-0.2l2.6-4.5c0.1-0.1,0.1-0.3,0-0.4l-2.6-4.5&#10;	C41,10.1,40.8,10,40.6,10h-5.3c-0.2,0-0.3,0.1-0.4,0.2l-2.6,4.5c-0.1,0.1-0.1,0.3,0,0.4L34.9,19.8z M35.6,10.9h4.7l2.4,4.1l-2.4,4.1&#10;	h-4.7L33.3,15L35.6,10.9z M44.8,4.3l-2-1.2c-0.2-0.1-0.4-0.1-0.5,0l-2,1.2C40.1,4.4,40,4.6,40,4.8v2.5c0,0.2,0.1,0.3,0.2,0.4l2,1.2&#10;	C42.3,9,42.4,9,42.5,9s0.2,0,0.3-0.1l2-1.2C44.9,7.6,45,7.4,45,7.2V4.8C45,4.6,44.9,4.4,44.8,4.3z M44,7l-1.5,0.9L41,7V5l1.5-0.9&#10;	L44,5V7z M21.3,14.8c0.1,0.2,0.3,0.2,0.4,0.2h6.6c0.2,0,0.3-0.1,0.4-0.3l3.2-5.5c0.1-0.2,0.1-0.3,0-0.5l-3.2-5.5&#10;	C28.7,3.1,28.5,3,28.3,3h-6.6c-0.2,0-0.3,0.1-0.4,0.2l-3.3,5.5c-0.1,0.2-0.1,0.4,0,0.5L21.3,14.8z M22.1,4h6l2.9,5L28,14H22l-2.9-5&#10;	L22.1,4z M39.9,23.5c-0.2-0.3-0.5-0.5-0.9-0.5h-7.3l-3.6-6.5C28,16.2,27.7,16,27.3,16H20l-3.6-6.5C16.2,9.2,15.9,9,15.5,9H7.7&#10;	C7.3,9,7,9.2,6.8,9.5l-3.7,7c-0.2,0.3-0.2,0.7,0,1l3.4,6L3.1,30c-0.1,0.3-0.2,0.6,0,0.9l3.7,7.5C6.9,38.8,7.3,39,7.7,39H15l3.6,5.5&#10;	c0.2,0.3,0.5,0.5,0.8,0.5h7.9c0.3,0,0.7-0.2,0.8-0.5l3.6-5.5h7.3c0.4,0,0.7-0.2,0.9-0.5l3.9-7c0.2-0.3,0.2-0.7,0-1L39.9,23.5z&#10;	 M26.7,18l3.6,6.5c0,0,0,0,0,0L27,30h-7.3l-3.6-6.4l3.4-5.6H26.7z M5.1,17l3.1-6h6.7l3.6,6.5c0,0,0,0,0,0L15.3,23H8.6c0,0,0,0,0,0&#10;	L5.1,17z M8.3,37l-3.2-6.5L8.5,24h6.7l3.7,6.5L15.4,37H8.3z M30.4,37.5L26.8,43H20l-3.6-5.5c0,0,0,0,0-0.1l3.4-6.4H27L30.4,37.5&#10;	C30.4,37.4,30.4,37.4,30.4,37.5z M38.5,37h-7.1l-3.5-6.5l3.3-5.5h7.3l3.4,6L38.5,37z"
+   id="path1"
+   style="fill:#ffffff;fill-opacity:1" />
+</svg>
