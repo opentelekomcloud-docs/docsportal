@@ -8,6 +8,7 @@ SDK
       :image: _static/images/python.svg
 
       - OTC Extensions|https://docs.otc.t-systems.com/python-otcextensions/
+      - Release Notes|https://docs.otc.t-systems.com/releasenotes/python-otcextensions
 
    .. container_item::
       :title: Golang

@@ -11,4 +11,4 @@ Open Telekom Cloud Service Documentation
    services
    developer/index
    additional/index
-   releasenotes
+   Release Notes <https://open-telekom-cloud.com/de/support/release-notes>

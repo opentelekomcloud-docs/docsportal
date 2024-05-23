@@ -15,3 +15,4 @@ Infrastructure As a Code
 
       - Open Telekom Cloud Docs|https://docs.otc.t-systems.com/terraform-provider-opentelekomcloud/
       - Terraform Docs|https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/latest/docs
+      - Release Notes|https://docs.otc.t-systems.com/releasenotes/terraform-provider-opentelekomcloud
