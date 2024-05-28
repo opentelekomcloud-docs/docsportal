@@ -3,7 +3,7 @@ Services
 
 .. toctree::
 
-   compute
+   computing
    container
    network
    storage
