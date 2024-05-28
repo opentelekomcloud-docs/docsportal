@@ -1,5 +1,5 @@
-Compute
-=======
+Computing
+=========
 
 .. service_group::
    :class: service-group
