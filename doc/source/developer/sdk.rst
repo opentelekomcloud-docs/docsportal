@@ -1,24 +1,27 @@
-SDK
-===
+Software Development Kits (SDK)
+===============================
 
-.. container:: row row-cols-1 row-cols-md-3 g-4
+.. directive_wrapper::
+   :class: card-item-wrapper
 
-   .. container_item::
-      :title: Python
-      :image: _static/images/python.svg
+   .. card_item::
+      :title: Python SDK
+      :image: python.svg
+      :description: The OpenStack SDK Extension for Open Telekom Cloud (known as python-otcextensions) is a library which extends the functionality of the OpenStack SDK with the additional services of Open Telekom Cloud which are not part of OpenStack. The extensions ships also additional functionality for the OpenStackClient (OSC).
 
-      - OTC Extensions|https://docs.otc.t-systems.com/python-otcextensions/
+      - OTC Extensions|https://docs.otc.t-systems.com/python-otcextensions
       - Release Notes|https://docs.otc.t-systems.com/releasenotes/python-otcextensions
 
-   .. container_item::
-      :title: Golang
-      :image: _static/images/golang.svg
+   .. card_item::
+      :title: Gophercloud (Golang SDK)
+      :image: golang.svg
+      :description: The Gophercloud is the Golang SDK for Open Telekom Cloud resources.
 
       - Golang SDK|https://github.com/opentelekomcloud/gophertelekomcloud/
 
-   .. container_item::
-      :title: JavaScript
-      :image: _static/images/javascript.svg
+   .. card_item::
+      :title: Javascript SDK
+      :image: javascript.svg
+      :description: This is Javascript SDK designed mostly for internal usage and for Rancher drivers' UI part
 
       - JavaScript SDK|https://github.com/opentelekomcloud/oms/
-
