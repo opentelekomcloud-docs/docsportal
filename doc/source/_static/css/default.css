@@ -38,8 +38,9 @@
 
 /* limit icon size in the card li */
 .icon-svg {
-    max-height: 20px;
-    max-width: 20px;
+    max-height: 40px;
+    max-width: 40px;
+    min-width: 40px;
 }
 
 .navigator-container .card li {
@@ -74,7 +75,24 @@
   }
 }
 
+@media (max-width: 768px) {
+  .item-docsportal {
+    flex-basis: 100%;
+    box-sizing: border-box;
+    align-self: stretch;
+  }
+}
+
+
 @media (min-width: 768px) {
+  .item-docsportal {
+    flex-basis: calc(50% - 1rem); /* needs gap in container-docsportal */
+    box-sizing: border-box;
+    align-self: stretch;
+  }
+}
+
+@media (min-width: 1200px) {
   .item-docsportal {
     flex-basis: calc(33.333% - 1rem); /* needs gap in container-docsportal */
     box-sizing: border-box;
@@ -82,9 +100,9 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1600px) {
   .item-docsportal {
-    flex-basis: 100%;
+    flex-basis: calc(25% - 1rem); /* needs gap in container-docsportal */
     box-sizing: border-box;
     align-self: stretch;
   }
@@ -132,4 +150,29 @@
   min-height: 100vh;
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.card-services {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+.service-entries {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.card-services .service-entries:last-child {
+  margin-bottom: 1rem;
+}
+
+.align-self-center {
+  align-self: center;
 }
