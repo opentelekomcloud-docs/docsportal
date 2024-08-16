@@ -5,7 +5,7 @@ Developer
    :maxdepth: 2
 
    api
-   api_guidelines/index
+   API Usage Guidelines <https://docs-int.otc-service.com/api-usage/index.html>
    sdk
    iac
    drivers
