@@ -5,7 +5,7 @@ Developer
    :maxdepth: 2
 
    api
-   API Usage Guidelines <https://docs-int.otc-service.com/api-usage/index.html>
+   API Usage Guidelines <https://docs.otc.t-systems.com/api-usage/index.html>
    sdk
    iac
    drivers
