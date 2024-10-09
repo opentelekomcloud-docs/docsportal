@@ -9,4 +9,4 @@ Developer
    sdk
    iac
    drivers
-   Architecture Center <https://docs.otc.t-systems.com/architecture-center/index.html>
+   Architecture Center <https://arch.otc-service.com/>
