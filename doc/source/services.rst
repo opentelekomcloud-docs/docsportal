@@ -12,3 +12,4 @@ Services
    application
    database
    big_data
+   other
