@@ -1,5 +1,5 @@
-Big Data and Data Analysis
-==========================
+Data Analysis
+=============
 
 .. service_group::
    :class: service-group
