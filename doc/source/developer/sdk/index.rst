@@ -1,6 +1,11 @@
 Software Development Kits (SDK)
 ===============================
 
+.. toctree::
+   :hidden:
+
+   third-party-sdk
+
 .. directive_wrapper::
    :class: card-item-wrapper
 
