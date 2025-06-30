@@ -4,6 +4,7 @@ Open Telekom Cloud Service Documentation
 
 .. service_navigator::
    :class: navigator-container
+   :cloud_environment: eu_de
 
 .. toctree::
    :hidden:

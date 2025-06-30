@@ -13,4 +13,4 @@ Third-Party Software Development Kits (SDK)
       :description: These are the third-party SDKs for OBS.
 
       - Python SDK|https://github.com/opentelekomcloud-community/obs-python-sdk
-      - Python SDK Documentation|https://docs-int.otc-service.com/object-storage-service-3rd-party/python-sdk/
+      - Python SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/python-sdk/
