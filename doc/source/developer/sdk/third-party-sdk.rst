@@ -14,3 +14,5 @@ Third-Party Software Development Kits (SDK)
 
       - Python SDK|https://github.com/opentelekomcloud-community/obs-python-sdk
       - Python SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/python-sdk/
+      - Go SDK|https://github.com/opentelekomcloud-community/obs-go-sdk
+      - Go SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/go-sdk/
