@@ -9,6 +9,7 @@ Open Telekom Cloud Service Documentation
 .. toctree::
    :hidden:
 
+   popular_services
    services
    developer/index
    additional/index
