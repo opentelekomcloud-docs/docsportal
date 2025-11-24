@@ -18,3 +18,7 @@ Third-Party Software Development Kits (SDK)
       - Java SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/java-sdk/
       - Go SDK|https://github.com/opentelekomcloud-community/obs-go-sdk
       - Go SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/go-sdk/
+      - Node.js SDK|https://github.com/opentelekomcloud-community/obs-nodejs-sdk
+      - Node.js SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/nodejs-sdk/
+      - C SDK|https://github.com/opentelekomcloud-community/obs-c-sdk
+      - C SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/c-sdk/
