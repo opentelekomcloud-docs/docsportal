@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "serve": "npx serve out"
   },
   "dependencies": {
     "@telekom-ods/react-ui-kit": "^2.4.1",

@@ -1,5 +1,8 @@
+'use client';
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { ODSButton } from "@telekom-ods/react-ui-kit";
 
 export default function Home() {
   return (
@@ -61,6 +64,13 @@ export default function Home() {
           </a>
         </div>
       </main>
+      <ODSButton
+        buttonIcon="happy-person-type-standard"
+        buttonType="standard"
+        label="Button Label"
+        size="large"
+        variant="primary"
+      />
     </div>
   );
 }
