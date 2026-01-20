@@ -22,3 +22,6 @@ Third-Party Software Development Kits (SDK)
       - Node.js SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/nodejs-sdk/
       - C SDK|https://github.com/opentelekomcloud-community/obs-c-sdk
       - C SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/c-sdk/
+      - .NET SDK|https://github.com/opentelekomcloud-community/obs-dotnet-sdk
+      - .NET SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/dotnet-sdk/
+
