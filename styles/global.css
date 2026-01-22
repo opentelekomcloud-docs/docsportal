@@ -39,6 +39,7 @@ a {
 
 main {
   margin-top: var(--app-header-h);
+  display: flex;
 }
 
 /* Optional: Anker/scrollIntoView */

@@ -5,13 +5,14 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import styles from '@/styles/Header.module.css';
-
-// import { ODSStandardGlobalHeader, ODSBadgeIcon } from "@telekom-ods/react-ui-kit";
 import { ODSStandardGlobalHeader, ODSBadgeIcon, ODSGlobalHeaderTabletMobileMenu, ODSGlobalHeaderMenu, ODSGlobalHeaderMenuLabel, ODSGlobalHeaderSecondaryMenu, ODSGlobalHeaderMenuButton } from "@telekom-ods/react-ui-kit";
 
 export default function Header() {
-  const wrapperRef = useRef<HTMLDivElement | null>(null);
-
+  // we use the inital layouteffect to get the size of the header
+  // this is then used to calculate the header hide and
+  // configure the padding-top of the main component
+  // to move the main part down. Otherwise the header
+  // would overlap the content.
   useLayoutEffect(() => {
     const headerEl = document.querySelector(".ODSStandardGlobalHeader");
 
