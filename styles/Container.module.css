@@ -1,0 +1,9 @@
+.container {
+        width: 100%;
+}
+
+@media(min-width: 1680px) {
+    .container {
+        max-width: var(--columns-14-columns);
+    }
+}

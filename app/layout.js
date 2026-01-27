@@ -1,7 +1,7 @@
 import "@/styles/global.css";
 import "@telekom-ods/react-ui-kit/style.css";
 import Header from '@/components/Header';
-import SideNavigation from '@/components/SideNavigation';
+import MainWrapper from '@/components/MainWrapper';
 import Footer from '@/components/Footer';
 
 export default function RootLayout({ children }) {
@@ -12,10 +12,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <Header></Header>
-        <main>
-          <SideNavigation></SideNavigation>
-          {children}
-        </main>
+        <MainWrapper>{children}</MainWrapper>
         <Footer></Footer>
       </body>
     </html>
