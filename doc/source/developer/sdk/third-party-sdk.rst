@@ -2,7 +2,7 @@ Third-Party Software Development Kits (SDK)
 ===========================================
 
 .. warning::
-    The SDKs referenced herein are third-party tools developed by the community. They are not officially supported, or maintained by Open Telekom Cloud. Use them at your own discretion and risk.
+    The SDKs referenced herein are third-party tools developed by the community. They are not officially supported, or maintained by T Cloud Public. Use them at your own discretion and risk.
 
 .. directive_wrapper::
    :class: card-item-wrapper

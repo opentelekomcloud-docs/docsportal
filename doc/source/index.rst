@@ -1,6 +1,6 @@
-========================================
-Open Telekom Cloud Service Documentation
-========================================
+====================================
+T Cloud Public Service Documentation
+====================================
 
 .. service_navigator::
    :class: navigator-container

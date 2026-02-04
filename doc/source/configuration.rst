@@ -4,7 +4,7 @@
 Connection Configuration
 ========================
 
-You can connect to the Open Telekom Cloud and OpenStack clouds in general
+You can connect to the T Cloud Public and OpenStack clouds in general
 using two approaches. The first one uses a credential file called
 ``clouds.yaml`` and the other one is to use ``environment variables``.
 
@@ -20,7 +20,7 @@ locations with increasing precedence:
 2. Home directory / user space (~/.config/openstack/{clouds,secure}.yaml)
 3. Current directory (./{clouds,secure}.yaml)
 
-A sample clouds.yaml file is listed below to connect with Open Telekom Cloud:
+A sample clouds.yaml file is listed below to connect with T Cloud Public:
 
 **clouds.yaml**
 
@@ -143,7 +143,7 @@ secret which is left out from ``clouds.yaml``:
 Agency based authorization
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Open Telekom Cloud supports a concept of agencies. One domain delegates access
+T Cloud Public supports a concept of agencies. One domain delegates access
 to resources to another domain. After trust relationship is established the
 following configuration can be used in ``clouds.yaml``:
 
@@ -172,7 +172,7 @@ Configuration of Environment Variables
 
 Historically OpenStack tools are supporting configuration through environment
 variables. Create a simple file like ``.ostackrc`` in the home directory and
-source the file to make the variables available. On Open Telekom Cloud servers
+source the file to make the variables available. On T Cloud Public servers
 this file exists on bootup and needs to be changed according to your credentials.
 
 .. code-block:: bash
