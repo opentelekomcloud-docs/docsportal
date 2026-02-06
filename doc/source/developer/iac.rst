@@ -7,7 +7,7 @@ Infrastructure As a Code
    .. card_item::
       :title: Ansible Collection Opentelekom.Cloud
       :image: ansible.svg
-      :description: The Ansible Collection Opentelekom.Cloud is a distribution format for Ansible content which includes playbooks, roles, modules, and plugins. You can install and use the Opentelekom.Cloud Collection to create and manage Open Telekom Cloud resources via Ansible playbooks.
+      :description: The Ansible Collection Opentelekom.Cloud is a distribution format for Ansible content which includes playbooks, roles, modules, and plugins. You can install and use the Opentelekom.Cloud Collection to create and manage T Cloud Public resources via Ansible playbooks.
 
       - Ansible Collection Documentation|https://docs.otc.t-systems.com/ansible-collection-cloud/
 

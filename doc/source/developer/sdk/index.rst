@@ -12,7 +12,7 @@ Software Development Kits (SDK)
    .. card_item::
       :title: Python SDK
       :image: python.svg
-      :description: The OpenStack SDK Extension for Open Telekom Cloud (known as python-otcextensions) is a library which extends the functionality of the OpenStack SDK with the additional services of Open Telekom Cloud which are not part of OpenStack. The extensions ships also additional functionality for the OpenStackClient (OSC).
+      :description: The OpenStack SDK Extension for T Cloud Public (known as python-otcextensions) is a library which extends the functionality of the OpenStack SDK with the additional services of T Cloud Public which are not part of OpenStack. The extensions ships also additional functionality for the OpenStackClient (OSC).
 
       - OTC Extensions|https://docs.otc.t-systems.com/python-otcextensions
       - Release Notes|https://docs.otc.t-systems.com/releasenotes/python-otcextensions
@@ -20,7 +20,7 @@ Software Development Kits (SDK)
    .. card_item::
       :title: Gophercloud (Golang SDK)
       :image: golang.svg
-      :description: The Gophercloud is the Golang SDK for Open Telekom Cloud resources.
+      :description: The Gophercloud is the Golang SDK for T Cloud Public resources.
 
       - Golang SDK|https://github.com/opentelekomcloud/gophertelekomcloud/
 

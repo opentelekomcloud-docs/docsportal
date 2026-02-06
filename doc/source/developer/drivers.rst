@@ -14,13 +14,13 @@ Drivers and Tools
    .. card_item::
       :title: Docker Machine Driver
       :image: docker_logo.svg
-      :description: The Docker Machine driver lets you create Docker hosts in your Open Telekom Cloud project. It creates Elastic Cloud Servers (ECS), installs Docker on them and then configures the Docker client to talk to them.
+      :description: The Docker Machine driver lets you create Docker hosts in your T Cloud Public project. It creates Elastic Cloud Servers (ECS), installs Docker on them and then configures the Docker client to talk to them.
 
       - Docker Machine driver sources|https://github.com/opentelekomcloud/docker-machine-opentelekomcloud
 
    .. card_item::
       :title: Rancher Cluster Driver for Cloud Container Engine
       :image: rancher_logo.svg
-      :description: The Rancher Cluster Driver for Open Telekom Cloud uses the service Cloud Container Engine (CCE) to create Rancher Kubernetes cluster on top of our service and is capable to manage it through the Rancher frontend.
+      :description: The Rancher Cluster Driver for T Cloud Public uses the service Cloud Container Engine (CCE) to create Rancher Kubernetes cluster on top of our service and is capable to manage it through the Rancher frontend.
 
       - Rancher Cluster Driver for CCE|https://github.com/opentelekomcloud/kontainer-engine-driver-otc
