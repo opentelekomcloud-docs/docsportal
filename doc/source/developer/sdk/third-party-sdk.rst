@@ -4,23 +4,14 @@ Third-Party Software Development Kits (SDK)
 .. warning::
     The SDKs referenced herein are third-party tools developed by the community. They are not officially supported, or maintained by T Cloud Public. Use them at your own discretion and risk.
 
-.. directive_wrapper::
-   :class: card-item-wrapper
+.. third_party_sdk::
+   :title: Object Storage Service (OBS)
+   :description: Integrate OBS using our open-source SDKs.
+   :icon: 📦
 
-   .. card_item::
-      :title: Object Storage SDK
-      :image: OBS.svg
-      :description: These are the third-party SDKs for OBS.
-
-      - Python SDK|https://github.com/opentelekomcloud-community/obs-python-sdk
-      - Python SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/python-sdk/
-      - Java SDK|https://github.com/opentelekomcloud-community/obs-java-sdk
-      - Java SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/java-sdk/
-      - Go SDK|https://github.com/opentelekomcloud-community/obs-go-sdk
-      - Go SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/go-sdk/
-      - Node.js SDK|https://github.com/opentelekomcloud-community/obs-nodejs-sdk
-      - Node.js SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/nodejs-sdk/
-      - C SDK|https://github.com/opentelekomcloud-community/obs-c-sdk
-      - C SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/c-sdk/
-      - .NET SDK|https://github.com/opentelekomcloud-community/obs-dotnet-sdk
-      - .NET SDK Documentation|https://docs.otc.t-systems.com/object-storage-service-3rd-party/dotnet-sdk/
+   Python|Python|Official Python SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-python-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/python-sdk/
+   Java|Java SDK|Official Java SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-java-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/java-sdk/
+   Go|Go|Go SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-go-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/go-sdk/
+   Node.js|Node.js|Node.js SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-nodejs-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/nodejs-sdk/
+   C|C|C SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-c-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/c-sdk/
+   .NET|.NET|.NET SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-dotnet-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/dotnet-sdk/
