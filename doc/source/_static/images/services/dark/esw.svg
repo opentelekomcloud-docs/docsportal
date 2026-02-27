@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 48 37.144"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="ESW.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="48.86388"
+     inkscape:cx="23.995229"
+     inkscape:cy="18.572001"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1-2" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.cls-1{fill:#333;}</style>
+  </defs>
+  <title
+     id="title1">ESW</title>
+  <g
+     id="Layer_2"
+     data-name="Layer 2">
+    <g
+       id="Layer_1-2"
+       data-name="Layer 1">
+      <path
+         id="Combined-Shape"
+         class="cls-1"
+         d="M35.5,37V35H36a10,10,0,0,0,0-20,11.529,11.529,0,0,0-2.6.3A9.191,9.191,0,0,0,34,12a10,10,0,0,0-20,0,8.808,8.808,0,0,0,.6,3.3A11.529,11.529,0,0,0,12,15a10,10,0,0,0,0,20h1.5v2H12a12,12,0,0,1,0-24h0V12a12,12,0,0,1,24,0v1h0a12,12,0,0,1,0,24ZM18.7,28.5h4.9a1,1,0,0,1,0,2H18.7v1.8a.945.945,0,0,1-1,1,4.331,4.331,0,0,1-.5-.1l-4.7-2.9a.984.984,0,0,1-.3-1.4c.1-.1.2-.3.3-.3l4.7-2.9a1.076,1.076,0,0,1,1.4.3.9.9,0,0,1,.1.5Zm10.2-5.6V21a4.331,4.331,0,0,1,.1-.5.984.984,0,0,1,1.4-.3l4.7,2.9c.1.1.3.2.3.3a1.076,1.076,0,0,1-.3,1.4l-4.7,2.9a.9.9,0,0,1-.5.1.945.945,0,0,1-1-1V25H24a1,1,0,0,1,0-2h4.9ZM18.7,20.8v1.9a4.331,4.331,0,0,1-.1.5.984.984,0,0,1-1.4.3l-4.7-2.9c-.1-.1-.3-.2-.3-.3a1.076,1.076,0,0,1,.3-1.4L17.2,16a.9.9,0,0,1,.5-.1.945.945,0,0,1,1,1v1.8h4.9a1,1,0,1,1,0,2H18.7ZM28.9,34.3H24a1,1,0,0,1,0-2h4.9V30.5a.945.945,0,0,1,1-1,4.331,4.331,0,0,1,.5.1l4.7,2.9a.984.984,0,0,1,.3,1.4c-.1.1-.2.3-.3.3L30.4,37a1.076,1.076,0,0,1-1.4-.3.9.9,0,0,1-.1-.5Z"
+         style="fill:#ffffff;fill-opacity:1" />
+    </g>
+  </g>
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>ESW</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
