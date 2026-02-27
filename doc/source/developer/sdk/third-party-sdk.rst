@@ -7,10 +7,10 @@ Third-Party Software Development Kits (SDK)
 .. third_party_sdk::
    :title: Object Storage Service (OBS)
    :description: Integrate OBS using our open-source SDKs.
-   :icon: 📦
+   :servicetype: obs
 
    Python|Python|Official Python SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-python-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/python-sdk/
-   Java|Java SDK|Official Java SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-java-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/java-sdk/
+   Java|Java|Official Java SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-java-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/java-sdk/
    Go|Go|Go SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-go-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/go-sdk/
    Node.js|Node.js|Node.js SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-nodejs-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/nodejs-sdk/
    C|C|C SDK for OBS integration.|https://github.com/opentelekomcloud-community/obs-c-sdk|https://docs.otc.t-systems.com/object-storage-service-3rd-party/c-sdk/
