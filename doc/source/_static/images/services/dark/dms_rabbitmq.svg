@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="132px"
+   height="132px"
+   viewBox="0 0 32 32"
+   id="svg1"
+   sodipodi:docname="rabbitmq.svg"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="9.7227182"
+     inkscape:cx="36.563849"
+     inkscape:cy="50.037447"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">DMS</title>
+  <path
+     d="M20.055 16c-0.736 0-1.333 0.598-1.333 1.333s0.597 1.333 1.333 1.333 1.333-0.597 1.333-1.333c0-0.735-0.597-1.333-1.333-1.333zM9.389 16c-0.736 0-1.333 0.598-1.333 1.333s0.597 1.333 1.333 1.333 1.333-0.597 1.333-1.333c0-0.735-0.597-1.333-1.333-1.333zM14.722 16c-0.736 0-1.333 0.598-1.333 1.333s0.597 1.333 1.333 1.333 1.333-0.597 1.333-1.333c0-0.735-0.597-1.333-1.333-1.333zM28.889 5.333h-22.333c-1.011 0-1.833 0.833-1.833 1.857v0.143h0.667v-0.143c0-0.657 0.524-1.191 1.167-1.191h22.333c0.643 0 1.167 0.534 1.167 1.191v14.309c0 0.656-0.523 1.191-1.167 1.191h-0.167v0.667h0.167c1.011 0 1.833-0.833 1.833-1.857v-14.309c0-1.024-0.822-1.857-1.833-1.857zM26.055 8h-22.667c-1.103 0-2 0.897-2 2v14.667c0 1.103 0.897 2 2 2h22.667c1.103 0 2-0.897 2-2v-14.667c0-1.103-0.897-2-2-2zM26.722 24.667c0 0.367-0.299 0.667-0.667 0.667h-22.667c-0.368 0-0.667-0.299-0.667-0.667v-14.667c0-0.367 0.299-0.667 0.667-0.667h22.667c0.368 0 0.667 0.299 0.667 0.667v14.667z"
+     id="path1"
+     style="fill:#ffffff;fill-opacity:1" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>DMS</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
