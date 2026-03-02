@@ -24,8 +24,7 @@ Infrastructure As a Code
       :image: crossplane.svg
       :description: Create platforms like cloud providers by building your own APIs and services with control planes, extending Kubernetes to manage any resource anywhere, and using a library of components to assemble your platform faster.
 
-      - View Source|https://github.com/opentelekomcloud/ansible-collection-cloud
-      - Documentation|https://docs.otc.t-systems.com/ansible-collection-cloud/
+      - View Source|https://github.com/opentelekomcloud/provider-opentelekomcloud
 
    .. card_item::
       :title: Ansible Collection Opentelekom.Cloud
